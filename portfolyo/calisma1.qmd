@@ -48,9 +48,6 @@ D. Sadece kodlama bilmek bir kişiyi veri bilimci yapmak için yeterli değildir
 #| warning: false
 
 # dslabs paketinin yüklenmesi
-if (!requireNamespace("dslabs", quietly = TRUE)) {
-  install.packages("dslabs")
-}
 library(dslabs)
 
 # veri setinin içe aktarılması
