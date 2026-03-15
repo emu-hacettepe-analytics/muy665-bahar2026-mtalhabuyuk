@@ -3,6 +3,6 @@ title: "Merhaba, Ben Muhammed Talha BÜYÜK"
 sidebar: false 
 ---
 
-MUY660-İş Analitiği dersi sayfama hoş geldiniz.
+MUY665-İş Analitiği dersi sayfama hoş geldiniz.
 
 Bu sayfada analitik çalışmalarımı paylaşıyorum.
