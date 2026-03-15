@@ -3,38 +3,33 @@ title: "Hakkımda"
 sidebar: false 
 ---
 
-![](assets/images/vesikalik.jpeg){fig-align="center"}
+![](images/WhatsApp%20Image%202026-03-06%20at%2021.55.19.jpeg){fig-align="center" width="155"}
+
+[Muhammed Talha Büyük - CV](file:///C:/Users/Talha/Desktop/Muhammed%20Talha%20B%C3%BCy%C3%BCk%20-%20CV.pdf)
 
 # Eğitim
 
--   B.S., ................................., ....................................University, Turkey, 20xx - 20xx.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
--   Ph.D.., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   Yüksek Lisans, Mühendislik Yönetimi, Hacettepe Üniversitesi, Ankara, Türkiye, 2026 -
+-   Lisans, İnşaat Mühendisliği, Atılım Üniversitesi, Ankara, Türkiye, 2023
 
 # İş Tecrübesi
 
-## Employements
+## İş Deneyimi
 
-1.  Firm xxx, position xx, year xxx
+1.  Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş., İnşaat Mühendisi, Ankara, Türkiye, Ağustos 2024 -
 
-2.  Firm yyy, position yyy, year yyy
+2.  Yıldızlar İnşaat ve Ticaret A.Ş. – Ankara 45.000 Seyirci Kapasiteli Stadyum İnşaatı, İnşaat Mühendisi, Ankara, Türkiye, Haziran 2023 – Ağustos 2024
 
-## Internships
+## Staj Deneyimi
 
-1.  Firm aaa, position xx, year xxx
+1.  MFA Taahhüt İnşaat ve Ticaret A.Ş. – Ankara Jandarma ve Sahil Güvenlik Akademisi, Stajyer İnşaat Mühendisi, Ankara, Türkiye, Ocak 2021 – Mart 2021
 
-2.  Firm bbb, position yyy, year yyy
+2.  Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş. – İstanbul Uluslararası Finans Merkezi, Stajyer İnşaat Mühendisi, Ankara, Türkiye, Temmuz 2020 – Eylül 2020
 
-# Projects
+# Yetenekler
 
-1.  TUBİTAK 1001..........................
+MS Office, AutoCAD, Tekla Structures
 
-# Publications
+# İlgi Alanları
 
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Ozturk, D. (2022) “UAV Routing for Reconnaissance Mission: A Multi-Objective Orienteering Problem with Time-Dependent Prizes and Multiple Connections”, Computers & Operations Research, 145: 105882.
-
-# Competencies
-
-R, Quarto, Git, Python
-
-# Hobbies
+Kitap Okumak, Koleksiyon

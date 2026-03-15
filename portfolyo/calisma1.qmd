@@ -2,15 +2,165 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+## Görev 3:
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+**Seçilen Video:** Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Daşdemir
 
-## (a)
+**Video Özeti:**
+
+Bu söyleşide, ODTÜ Endüstri Mühendisliği lisans ve yüksek lisans mezunu, Arizona State Üniversitesi'nde doktora eğitimine devam eden ve Invent Analytics'te Veri Bilimcisi olarak çalışan Kerem Demirtaş; veri bilimi alanına endüstri mühendisliği perspektifinden yaklaşmaktadır. Veri bilimi hakkındaki yaygın yanılgıları düzeltmiş ve tarihi olaylar ile destekleyerek bu alandaki projelerin temel aşamalarından bahsetmiştir.
+
+Demirtaş, veri biliminin yalnızca istatistikten ve model kurmaktan ibaret olmadığını vurgular. Sadece kod yazmasını bilmekle veri bilimci olunamayacağını belirtir, çünkü Demirtaş'a göre bu iş hem eleştirel düşünme yeteneği hem de en önemlisi 'alan bilgisi' gerektirir. İnsan faktörü ve yargısı; problemin tanımlanmasında ve sonuçların yorumlanmasında vazgeçilmezdir. Kerem Demirtaş'ın tanımına göre veri bilimi; bir problemin çözümünde istatistik, makine öğrenimi ve alan bilgisinin entegre edilmesiyle birlikte insan yargısının temele alındığı disiplinler arası bir alandır. Yapay zekanın veri biliminde bir araç olduğunu ve insan faktörünün yerinin değiştirilemeyeceğini vurgular. Ayrıca yaygın bilinenin aksine, veriden anlam çıkarılabilmesi için verinin mutlaka büyük boyutlarda (Big Data) olması gerekmediği de belirtilmiştir.
+
+Veri biliminde tipik bir projenin adımları sırasıyla şu şekildedir: problem tanımı, veri toplama/hazırlama, keşifçi veri analizi, model kurma, model değerlendirme, canlıya alma. Doğru problem tanımına örnek olarak 2. Dünya Savaşı'nda bombardıman uçaklarındaki mermi deliği analizi anlatılmıştır, sadece üsse geri dönen uçaklardaki mermi izlerine bakmanın yanıltıcı olacağı ve görünmeyen verinin yani düşen uçakların da hesaba katılması gerektiği belirtilmiştir. Dr. John Snow'un 1854 Londra kolera salgınını harita üzerinde görselleştirerek hastalığın havadan değil sudan bulaştığını kanıtlaması ise keşifçi veri analizi aşamasına örnek verilmiştir.
+
+Doktora tezi olarak "otonom araçların otoyollarda insan sürücülü araçlarla karma trafik içinde konvoy oluşturarak trafik akışını nasıl optimize edebileceği" üzerine çalışan Demirtaş, otonom araçlar gibi sistemlerin insan hatasını minimize etme potansiyeli olsa da otonomiye tamamen geçişin özellikle Türkiye gibi ülkelerde zor olabileceğini belirtmiştir. Son olarak Kerem Demirtaş, öğrencilere kariyerlerini geliştirmeleri adına Python programlama dilini öğrenmelerini tavsiye ederek konuşmasını sonlandırmıştır.
+
+------------------------------------------------------------------------
+
+**Açık Uçlu Soru:** Kerem Demirtaş'ın 2. Dünya Savaşı'ndaki bombardıman uçakları örneğini vererek veri biliminde vurgulamak istediği en temel kavram ve aşama nedir? Kısaca açıklayınız.
+
+*Cevap:* Bu örnekle veri bilimi süreçlerindeki doğru problem tanımının ve önyargısız düşüncenin önemi vurgulanmıştır. Askeri yetkililer yalnızca üsse dönmeyi başaran uçaklardaki mermi deliklerine bakarak uçaklarda o bölgelerin zırhlandırılmasını önermişlerdir. Ancak vurulup düşen ve hiç geri dönemeyen uçakların verisini hesaba katılmamıştır. Dönen uçakların vurulduğu yerler aslında uçağı düşürmeyecek sağlam bölgelerdir, asıl güçlendirilmesi gereken yerler ise uçakların vurulup geri dönemediği kokpit ve motor gibi kritik noktalardır. Bu durum, görünmeyen veriyi hesaba katmanın ve problemi baştan doğru tanımlamanın veri bilimindeki kritik rolünü ortaya koyar.
+
+------------------------------------------------------------------------
+
+**Çoktan Seçmeli Soru:** Kerem Demirtaş'ın sunumuna göre, aşağıdakilerden hangisi veri bilimi ile ilgili doğru bilinen yanılgılardan biridir?
+
+A. Veri bilimi; istatistik, makine öğrenimi ve alan bilgisini harmanlayan disiplinler arası bir alandır.
+
+B. Veri biliminden anlamlı yorumlar çıkarabilmek için veri setinin mutlaka "Büyük Veri" (Big Data) olması gerekir.
+
+C. Veri biliminde kurulan modellerin işe yaraması için insan yargısının sürece dahil edilmesi şarttır.
+
+D. Sadece kodlama bilmek bir kişiyi veri bilimci yapmak için yeterli değildir.
+
+*Doğru Cevap: B*
+
+------------------------------------------------------------------------
+
+## Görev 4:
+
+### Hazırlık
 
 ```{r}
-1 + 1
+#| label: setup
+#| message: false
+#| warning: false
+
+# dslabs paketinin yüklenmesi
+if (!requireNamespace("dslabs", quietly = TRUE)) {
+  install.packages("dslabs")
+}
+library(dslabs)
+
+# veri setinin içe aktarılması
+data("polls_us_election_2016")
+original_data <- polls_us_election_2016
+
+# kişisel bilgilerin tanımlanması
+my_first    <- "Talha"
+my_birth_year <- 1998
+
+# k değerinin hesaplanması
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+
+# bilgilerin yazdırılması
+cat("Ad         :", my_first, "\n")
+cat("Doğum Yılı :", my_birth_year, "\n")
+cat("Harf Sayısı:", nchar(my_first), "\n")
+cat("k değeri   :", k, "\n")
+cat("k'nın türü :", ifelse(k %% 2 == 0, "Çift",
+                                          "Tek"), "\n")
 ```
 
-## (b)
+### Orijinal Veri Setinden k Satır Görüntüleme
+
+```{r}
+#| label: original-rows
+
+# veri setinden k satır çekme (k çiftse ilk, k tekse son)
+if (k %% 2 == 0) {
+  cat("k çift → ilk", k, "satır:\n")
+  knitr::kable(head(original_data, k)) #*
+} else {
+  cat("k tek → son", k, "satır:\n")
+  knitr::kable(tail(original_data, k)) #*
+}
+```
+
+### NA Değer Analizi
+
+```{r}
+#| label: na-analysis
+
+# toplam NA sayısını bulma ve yazdırma
+toplam_na <- sum(is.na(original_data))
+cat("Tüm veri setindeki toplam NA sayısı:", toplam_na, "\n\n")
+
+# sütun başına NA sayısı hesaplama ve büyükten küçüğe sıralama (ilk 8 sütun)
+sutun_na <- sort(colSums(is.na(original_data)), decreasing = TRUE) #*
+cat("Sütun başına NA sayısı (ilk 8, büyükten küçüğe):\n")
+print(sutun_na[1:8]) #*
+```
+
+### NA Değerlerini Değiştirme
+
+```{r}
+#| label: na-replacement
+
+# orijinal veriyi kopyalayarak yeni veriyi oluşturma
+new_data <- original_data
+
+# yeni değerlerin tanımlanması
+na_numeric <- my_birth_year + k
+na_char    <- paste0(my_first, "_", k)
+
+# yeni değerlerin yazdırılması
+cat("Sayısal NA yerine gelecek değer  :", na_numeric, "\n")
+cat("Karakter/Faktör NA yerine değer  :", na_char, "\n\n")
+
+# sütun türüne göre NA'ların yeni değerler ile değiştirilmesi
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- na_numeric
+
+  } else if (is.factor(new_data[[col]])) {
+    levels(new_data[[col]]) <- c(levels(new_data[[col]]), na_char)
+    new_data[[col]][is.na(new_data[[col]])] <- na_char
+
+  } else if (is.character(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- na_char
+  }
+} #*
+
+```
+
+### Yeni Veri Setinden k Satır Görüntüleme
+
+```{r}
+#| label: new-data-rows
+
+# veri setinden k satır çekme (k çiftse ilk, k tekse son)
+if (k %% 2 == 0) {
+  cat("k çift → yeni verinin ilk", k, "satırı:\n")
+  knitr::kable(head(new_data, k))
+} else {
+  cat("k tek → yeni verinin son", k, "satırı:\n")
+  knitr::kable(tail(new_data, k))
+}
+```
+
+### Doğrulama
+
+```{r}
+#| label: verification
+
+# yeni veride toplam NA sayısını bulma ve yazdırma
+kalan_na <- sum(is.na(new_data))
+cat("Yeni veri setindeki toplam NA sayısı:", kalan_na, "\n")
+
+# yeni veride NA değer sorgusu
+cat("anyNA(new_data):", anyNA(new_data), "\n")
+```
+
+*Bu ödevde "\*" işareti ile beliritlen; veri setinden k satırın yazdırılması, sütunlara göre NA değer toplaması, NA değerlerin değiştirilmesi kısımlarında yapay zeka aracından destek alınmıştır ve tarafımca kontrol edilmiştir.*

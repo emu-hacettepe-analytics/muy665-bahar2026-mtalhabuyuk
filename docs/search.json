@@ -1,331 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Analitik sayfama hoş geldiniz",
-    "section": "",
-    "text": "MUY660-İş Analitiği dersi sayfama hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyorum.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "teammembers/volkansonmez.html",
-    "href": "teammembers/volkansonmez.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Takım Üyeleri",
-    "section": "",
-    "text": "Use left menu to see the detailed CVs of our Team Members.\n\nTeam Members\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Team Members",
-      "Takım Üyeleri"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-2.html",
-    "href": "assignments/assignment-2.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Assignment 2"
-    ]
-  },
-  {
-    "objectID": "analysis.html",
-    "href": "analysis.html",
-    "title": "Analysis",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assignments/assignment-1.html",
-    "href": "assignments/assignment-1.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.",
-    "crumbs": [
-      "Assignment 1"
-    ]
-  },
-  {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
-    "section": "",
-    "text": "Data source: xxx\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "teammembers/erdidasdemir.html",
-    "href": "teammembers/erdidasdemir.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
-  },
-  {
-    "objectID": "team/volkansonmez.html",
-    "href": "team/volkansonmez.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Project Team",
-      "Assignment 2"
-    ]
-  },
-  {
-    "objectID": "team/erdidasdemir.html",
-    "href": "team/erdidasdemir.html",
-    "title": "Erdi Dasdemir",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.",
-    "crumbs": [
-      "Team Members",
-      "Erdi Dasdemir"
-    ]
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "My Assignments",
-    "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top",
-    "crumbs": [
-      "Assignments",
-      "My Assignments"
-    ]
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Project X",
-    "section": "",
-    "text": "Welcome to my project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
-  },
-  {
-    "objectID": "project.html#data-source",
-    "href": "project.html#data-source",
-    "title": "Project X",
-    "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#general-information-about-data",
-    "href": "project.html#general-information-about-data",
-    "title": "Project X",
-    "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#reason-of-choice",
-    "href": "project.html#reason-of-choice",
-    "title": "Project X",
-    "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#preprocessing",
-    "href": "project.html#preprocessing",
-    "title": "Project X",
-    "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#exploratory-data-analysis",
-    "href": "project.html#exploratory-data-analysis",
-    "title": "Project X",
-    "section": "3.1 Exploratory Data Analysis",
-    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#trend-analysis",
-    "href": "project.html#trend-analysis",
-    "title": "Project X",
-    "section": "3.2 Trend Analysis",
-    "text": "3.2 Trend Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#model-fitting",
-    "href": "project.html#model-fitting",
-    "title": "Project X",
-    "section": "3.3 Model Fitting",
-    "text": "3.3 Model Fitting\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#results",
-    "href": "project.html#results",
-    "title": "Project X",
-    "section": "3.4 Results",
-    "text": "3.4 Results\nxxxxxx"
-  },
-  {
-    "objectID": "team/szymanski.html",
-    "href": "team/szymanski.html",
-    "title": "Sebastian Szymański",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/edindzeko.html",
-    "href": "team/edindzeko.html",
-    "title": "Edin_Džeko",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
-  },
-  {
-    "objectID": "team/dusantadic.html",
-    "href": "team/dusantadic.html",
-    "title": "Dusan Tadic",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/fred.html",
-    "href": "team/fred.html",
-    "title": "Frederico Rodrigues",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html#proje-adı",
-    "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
-    "section": "Proje Adı",
-    "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
-  },
-  {
-    "objectID": "index.html#proje-konusu",
-    "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
-    "section": "Proje Konusu",
-    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
-  },
-  {
-    "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
-    "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
-    "section": "Veri Seti Hakkında Özet Bilgi",
-    "text": "Veri Seti Hakkında Özet Bilgi"
-  },
-  {
-    "objectID": "index.html#sonuçlar",
-    "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
-    "section": "Sonuçlar",
-    "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
-  },
-  {
-    "objectID": "index.html#takım-üyeleri",
-    "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
-    "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
-  },
-  {
-    "objectID": "portfolyo.html",
-    "href": "portfolyo.html",
-    "title": "Portfolyo",
-    "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2025-2026 bahar dönemi boyunca yaptığım analitik çalışmalarımı sunmaktayım. Çalışmalarıma sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
-    "crumbs": [
-      "Portfolyo"
-    ]
-  },
-  {
-    "objectID": "takim.html",
-    "href": "takim.html",
-    "title": "Takım Üyeleri",
-    "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri"
-    ]
-  },
-  {
     "objectID": "proje.html",
     "href": "proje.html",
     "title": "Proje X (proje adını yazınız)",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
-  },
-  {
-    "objectID": "proje.html#data-source",
-    "href": "proje.html#data-source",
-    "title": "Proje X",
-    "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#general-information-about-data",
-    "href": "proje.html#general-information-about-data",
-    "title": "Proje X",
-    "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#reason-of-choice",
-    "href": "proje.html#reason-of-choice",
-    "title": "Proje X",
-    "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#preprocessing",
-    "href": "proje.html#preprocessing",
-    "title": "Proje X",
-    "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#exploratory-data-analysis",
-    "href": "proje.html#exploratory-data-analysis",
-    "title": "Proje X",
-    "section": "3.1 Exploratory Data Analysis",
-    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#trend-analysis",
-    "href": "proje.html#trend-analysis",
-    "title": "Proje X",
-    "section": "3.2 Trend Analysis",
-    "text": "3.2 Trend Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#model-fitting",
-    "href": "proje.html#model-fitting",
-    "title": "Proje X",
-    "section": "3.3 Model Fitting",
-    "text": "3.3 Model Fitting\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#results",
-    "href": "proje.html#results",
-    "title": "Proje X",
-    "section": "3.4 Results",
-    "text": "3.4 Results\nxxxxxx"
-  },
-  {
-    "objectID": "portfolyo/calisma2.html",
-    "href": "portfolyo/calisma2.html",
-    "title": "Çalışma 2",
-    "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Çalışma 2"
-    ]
-  },
-  {
-    "objectID": "portfolyo/calisma1.html",
-    "href": "portfolyo/calisma1.html",
-    "title": "Çalışma 1",
-    "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Çalışma 1"
-    ]
+    "text": "Projemizle ilgili güncellemelerden haberdar olmak için bu xxxxx bağlantısındaki proje sayfamızı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -384,13 +63,81 @@
     "text": "3.4 Sonuçlar\nxxxxxx"
   },
   {
-    "objectID": "portfolyo/calisma1.html#a",
-    "href": "portfolyo/calisma1.html#a",
+    "objectID": "portfolyo.html",
+    "href": "portfolyo.html",
+    "title": "Portfolyo",
+    "section": "",
+    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2025-2026 bahar dönemi boyunca yaptığım analitik çalışmalarımı sunmaktayım. Çalışmalarıma sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
+    "crumbs": [
+      "Portfolyo"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html",
+    "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
-    "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
+    "section": "",
+    "text": "Seçilen Video: Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Daşdemir\nVideo Özeti:\nBu söyleşide, ODTÜ Endüstri Mühendisliği lisans ve yüksek lisans mezunu, Arizona State Üniversitesi’nde doktora eğitimine devam eden ve Invent Analytics’te Veri Bilimcisi olarak çalışan Kerem Demirtaş; veri bilimi alanına endüstri mühendisliği perspektifinden yaklaşmaktadır. Veri bilimi hakkındaki yaygın yanılgıları düzeltmiş ve tarihi olaylar ile destekleyerek bu alandaki projelerin temel aşamalarından bahsetmiştir.\nDemirtaş, veri biliminin yalnızca istatistikten ve model kurmaktan ibaret olmadığını vurgular. Sadece kod yazmasını bilmekle veri bilimci olunamayacağını belirtir, çünkü Demirtaş’a göre bu iş hem eleştirel düşünme yeteneği hem de en önemlisi ‘alan bilgisi’ gerektirir. İnsan faktörü ve yargısı; problemin tanımlanmasında ve sonuçların yorumlanmasında vazgeçilmezdir. Kerem Demirtaş’ın tanımına göre veri bilimi; bir problemin çözümünde istatistik, makine öğrenimi ve alan bilgisinin entegre edilmesiyle birlikte insan yargısının temele alındığı disiplinler arası bir alandır. Yapay zekanın veri biliminde bir araç olduğunu ve insan faktörünün yerinin değiştirilemeyeceğini vurgular. Ayrıca yaygın bilinenin aksine, veriden anlam çıkarılabilmesi için verinin mutlaka büyük boyutlarda (Big Data) olması gerekmediği de belirtilmiştir.\nVeri biliminde tipik bir projenin adımları sırasıyla şu şekildedir: problem tanımı, veri toplama/hazırlama, keşifçi veri analizi, model kurma, model değerlendirme, canlıya alma. Doğru problem tanımına örnek olarak 2. Dünya Savaşı’nda bombardıman uçaklarındaki mermi deliği analizi anlatılmıştır, sadece üsse geri dönen uçaklardaki mermi izlerine bakmanın yanıltıcı olacağı ve görünmeyen verinin yani düşen uçakların da hesaba katılması gerektiği belirtilmiştir. Dr. John Snow’un 1854 Londra kolera salgınını harita üzerinde görselleştirerek hastalığın havadan değil sudan bulaştığını kanıtlaması ise keşifçi veri analizi aşamasına örnek verilmiştir.\nDoktora tezi olarak “otonom araçların otoyollarda insan sürücülü araçlarla karma trafik içinde konvoy oluşturarak trafik akışını nasıl optimize edebileceği” üzerine çalışan Demirtaş, otonom araçlar gibi sistemlerin insan hatasını minimize etme potansiyeli olsa da otonomiye tamamen geçişin özellikle Türkiye gibi ülkelerde zor olabileceğini belirtmiştir. Son olarak Kerem Demirtaş, öğrencilere kariyerlerini geliştirmeleri adına Python programlama dilini öğrenmelerini tavsiye ederek konuşmasını sonlandırmıştır.\n\nAçık Uçlu Soru: Kerem Demirtaş’ın 2. Dünya Savaşı’ndaki bombardıman uçakları örneğini vererek veri biliminde vurgulamak istediği en temel kavram ve aşama nedir? Kısaca açıklayınız.\nCevap: Bu örnekle veri bilimi süreçlerindeki doğru problem tanımının ve önyargısız düşüncenin önemi vurgulanmıştır. Askeri yetkililer yalnızca üsse dönmeyi başaran uçaklardaki mermi deliklerine bakarak uçaklarda o bölgelerin zırhlandırılmasını önermişlerdir. Ancak vurulup düşen ve hiç geri dönemeyen uçakların verisini hesaba katılmamıştır. Dönen uçakların vurulduğu yerler aslında uçağı düşürmeyecek sağlam bölgelerdir, asıl güçlendirilmesi gereken yerler ise uçakların vurulup geri dönemediği kokpit ve motor gibi kritik noktalardır. Bu durum, görünmeyen veriyi hesaba katmanın ve problemi baştan doğru tanımlamanın veri bilimindeki kritik rolünü ortaya koyar.\n\nÇoktan Seçmeli Soru: Kerem Demirtaş’ın sunumuna göre, aşağıdakilerden hangisi veri bilimi ile ilgili doğru bilinen yanılgılardan biridir?\nA. Veri bilimi; istatistik, makine öğrenimi ve alan bilgisini harmanlayan disiplinler arası bir alandır.\nB. Veri biliminden anlamlı yorumlar çıkarabilmek için veri setinin mutlaka “Büyük Veri” (Big Data) olması gerekir.\nC. Veri biliminde kurulan modellerin işe yaraması için insan yargısının sürece dahil edilmesi şarttır.\nD. Sadece kodlama bilmek bir kişiyi veri bilimci yapmak için yeterli değildir.\nDoğru Cevap: B",
     "crumbs": [
       "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#görev-3",
+    "href": "portfolyo/calisma1.html#görev-3",
+    "title": "Çalışma 1",
+    "section": "",
+    "text": "Seçilen Video: Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Daşdemir\nVideo Özeti:\nBu söyleşide, ODTÜ Endüstri Mühendisliği lisans ve yüksek lisans mezunu, Arizona State Üniversitesi’nde doktora eğitimine devam eden ve Invent Analytics’te Veri Bilimcisi olarak çalışan Kerem Demirtaş; veri bilimi alanına endüstri mühendisliği perspektifinden yaklaşmaktadır. Veri bilimi hakkındaki yaygın yanılgıları düzeltmiş ve tarihi olaylar ile destekleyerek bu alandaki projelerin temel aşamalarından bahsetmiştir.\nDemirtaş, veri biliminin yalnızca istatistikten ve model kurmaktan ibaret olmadığını vurgular. Sadece kod yazmasını bilmekle veri bilimci olunamayacağını belirtir, çünkü Demirtaş’a göre bu iş hem eleştirel düşünme yeteneği hem de en önemlisi ‘alan bilgisi’ gerektirir. İnsan faktörü ve yargısı; problemin tanımlanmasında ve sonuçların yorumlanmasında vazgeçilmezdir. Kerem Demirtaş’ın tanımına göre veri bilimi; bir problemin çözümünde istatistik, makine öğrenimi ve alan bilgisinin entegre edilmesiyle birlikte insan yargısının temele alındığı disiplinler arası bir alandır. Yapay zekanın veri biliminde bir araç olduğunu ve insan faktörünün yerinin değiştirilemeyeceğini vurgular. Ayrıca yaygın bilinenin aksine, veriden anlam çıkarılabilmesi için verinin mutlaka büyük boyutlarda (Big Data) olması gerekmediği de belirtilmiştir.\nVeri biliminde tipik bir projenin adımları sırasıyla şu şekildedir: problem tanımı, veri toplama/hazırlama, keşifçi veri analizi, model kurma, model değerlendirme, canlıya alma. Doğru problem tanımına örnek olarak 2. Dünya Savaşı’nda bombardıman uçaklarındaki mermi deliği analizi anlatılmıştır, sadece üsse geri dönen uçaklardaki mermi izlerine bakmanın yanıltıcı olacağı ve görünmeyen verinin yani düşen uçakların da hesaba katılması gerektiği belirtilmiştir. Dr. John Snow’un 1854 Londra kolera salgınını harita üzerinde görselleştirerek hastalığın havadan değil sudan bulaştığını kanıtlaması ise keşifçi veri analizi aşamasına örnek verilmiştir.\nDoktora tezi olarak “otonom araçların otoyollarda insan sürücülü araçlarla karma trafik içinde konvoy oluşturarak trafik akışını nasıl optimize edebileceği” üzerine çalışan Demirtaş, otonom araçlar gibi sistemlerin insan hatasını minimize etme potansiyeli olsa da otonomiye tamamen geçişin özellikle Türkiye gibi ülkelerde zor olabileceğini belirtmiştir. Son olarak Kerem Demirtaş, öğrencilere kariyerlerini geliştirmeleri adına Python programlama dilini öğrenmelerini tavsiye ederek konuşmasını sonlandırmıştır.\n\nAçık Uçlu Soru: Kerem Demirtaş’ın 2. Dünya Savaşı’ndaki bombardıman uçakları örneğini vererek veri biliminde vurgulamak istediği en temel kavram ve aşama nedir? Kısaca açıklayınız.\nCevap: Bu örnekle veri bilimi süreçlerindeki doğru problem tanımının ve önyargısız düşüncenin önemi vurgulanmıştır. Askeri yetkililer yalnızca üsse dönmeyi başaran uçaklardaki mermi deliklerine bakarak uçaklarda o bölgelerin zırhlandırılmasını önermişlerdir. Ancak vurulup düşen ve hiç geri dönemeyen uçakların verisini hesaba katılmamıştır. Dönen uçakların vurulduğu yerler aslında uçağı düşürmeyecek sağlam bölgelerdir, asıl güçlendirilmesi gereken yerler ise uçakların vurulup geri dönemediği kokpit ve motor gibi kritik noktalardır. Bu durum, görünmeyen veriyi hesaba katmanın ve problemi baştan doğru tanımlamanın veri bilimindeki kritik rolünü ortaya koyar.\n\nÇoktan Seçmeli Soru: Kerem Demirtaş’ın sunumuna göre, aşağıdakilerden hangisi veri bilimi ile ilgili doğru bilinen yanılgılardan biridir?\nA. Veri bilimi; istatistik, makine öğrenimi ve alan bilgisini harmanlayan disiplinler arası bir alandır.\nB. Veri biliminden anlamlı yorumlar çıkarabilmek için veri setinin mutlaka “Büyük Veri” (Big Data) olması gerekir.\nC. Veri biliminde kurulan modellerin işe yaraması için insan yargısının sürece dahil edilmesi şarttır.\nD. Sadece kodlama bilmek bir kişiyi veri bilimci yapmak için yeterli değildir.\nDoğru Cevap: B",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#görev-4",
+    "href": "portfolyo/calisma1.html#görev-4",
+    "title": "Çalışma 1",
+    "section": "Görev 4:",
+    "text": "Görev 4:\n\nHazırlık\n\n# dslabs paketinin yüklenmesi\nif (!requireNamespace(\"dslabs\", quietly = TRUE)) {\n  install.packages(\"dslabs\")\n}\nlibrary(dslabs)\n\n# veri setinin içe aktarılması\ndata(\"polls_us_election_2016\")\noriginal_data &lt;- polls_us_election_2016\n\n# kişisel bilgilerin tanımlanması\nmy_first    &lt;- \"Talha\"\nmy_birth_year &lt;- 1998\n\n# k değerinin hesaplanması\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8\n\n# bilgilerin yazdırılması\ncat(\"Ad         :\", my_first, \"\\n\")\n\nAd         : Talha \n\ncat(\"Doğum Yılı :\", my_birth_year, \"\\n\")\n\nDoğum Yılı : 1998 \n\ncat(\"Harf Sayısı:\", nchar(my_first), \"\\n\")\n\nHarf Sayısı: 5 \n\ncat(\"k değeri   :\", k, \"\\n\")\n\nk değeri   : 16 \n\ncat(\"k'nın türü :\", ifelse(k %% 2 == 0, \"Çift\",\n                                          \"Tek\"), \"\\n\")\n\nk'nın türü : Çift \n\n\n\n\nOrijinal Veri Setinden k Satır Görüntüleme\n\n# veri setinden k satır çekme (k çiftse ilk, k tekse son)\nif (k %% 2 == 0) {\n  cat(\"k çift → ilk\", k, \"satır:\\n\")\n  knitr::kable(head(original_data, k)) #*\n} else {\n  cat(\"k tek → son\", k, \"satır:\\n\")\n  knitr::kable(tail(original_data, k)) #*\n}\n\nk çift → ilk 16 satır:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nstartdate\nenddate\npollster\ngrade\nsamplesize\npopulation\nrawpoll_clinton\nrawpoll_trump\nrawpoll_johnson\nrawpoll_mcmullin\nadjpoll_clinton\nadjpoll_trump\nadjpoll_johnson\nadjpoll_mcmullin\n\n\n\n\nU.S.\n2016-11-03\n2016-11-06\nABC News/Washington Post\nA+\n2220\nlv\n47.00\n43.00\n4.00\nNA\n45.20163\n41.72430\n4.626221\nNA\n\n\nU.S.\n2016-11-01\n2016-11-07\nGoogle Consumer Surveys\nB\n26574\nlv\n38.03\n35.69\n5.46\nNA\n43.34557\n41.21439\n5.175792\nNA\n\n\nU.S.\n2016-11-02\n2016-11-06\nIpsos\nA-\n2195\nlv\n42.00\n39.00\n6.00\nNA\n42.02638\n38.81620\n6.844734\nNA\n\n\nU.S.\n2016-11-04\n2016-11-07\nYouGov\nB\n3677\nlv\n45.00\n41.00\n5.00\nNA\n45.65676\n40.92004\n6.069454\nNA\n\n\nU.S.\n2016-11-03\n2016-11-06\nGravis Marketing\nB-\n16639\nrv\n47.00\n43.00\n3.00\nNA\n46.84089\n42.33184\n3.726098\nNA\n\n\nU.S.\n2016-11-03\n2016-11-06\nFox News/Anderson Robbins Research/Shaw & Company Research\nA\n1295\nlv\n48.00\n44.00\n3.00\nNA\n49.02208\n43.95631\n3.057876\nNA\n\n\nU.S.\n2016-11-02\n2016-11-06\nCBS News/New York Times\nA-\n1426\nlv\n45.00\n41.00\n5.00\nNA\n45.11649\n40.92722\n4.341786\nNA\n\n\nU.S.\n2016-11-03\n2016-11-05\nNBC News/Wall Street Journal\nA-\n1282\nlv\n44.00\n40.00\n6.00\nNA\n43.58576\n40.77325\n5.365788\nNA\n\n\nNew Mexico\n2016-11-06\n2016-11-06\nZia Poll\nNA\n8439\nlv\n46.00\n44.00\n6.00\nNA\n44.82594\n41.59978\n7.870127\nNA\n\n\nU.S.\n2016-11-04\n2016-11-07\nIBD/TIPP\nA-\n1107\nlv\n41.20\n42.70\n7.10\nNA\n42.92745\n42.23545\n6.316175\nNA\n\n\nU.S.\n2016-11-04\n2016-11-06\nSelzer & Company\nA+\n799\nlv\n44.00\n41.00\n4.00\nNA\n44.21714\n40.57082\n4.068708\nNA\n\n\nU.S.\n2016-11-01\n2016-11-04\nAngus Reid Global\nA-\n1151\nlv\n48.00\n44.00\n6.00\nNA\n47.57171\n43.68125\n5.556625\nNA\n\n\nU.S.\n2016-11-03\n2016-11-06\nMonmouth University\nA+\n748\nlv\n50.00\n44.00\n4.00\nNA\n48.86765\n43.39600\n4.838600\nNA\n\n\nVirginia\n2016-11-03\n2016-11-04\nPublic Policy Polling\nB+\n1238\nlv\n48.00\n43.00\n1.00\nNA\n47.43805\n42.32751\n2.207659\nNA\n\n\nU.S.\n2016-11-01\n2016-11-03\nMarist College\nA\n940\nlv\n44.00\n43.00\n6.00\nNA\n42.83406\n43.43819\n4.780429\nNA\n\n\nIowa\n2016-11-01\n2016-11-04\nSelzer & Company\nA+\n800\nlv\n39.00\n46.00\n6.00\nNA\n39.37561\n45.66917\n6.062713\nNA\n\n\n\n\n\n\n\nNA Değer Analizi\n\n# toplam NA sayısını bulma ve yazdırma\ntoplam_na &lt;- sum(is.na(original_data))\ncat(\"Tüm veri setindeki toplam NA sayısı:\", toplam_na, \"\\n\\n\")\n\nTüm veri setindeki toplam NA sayısı: 11604 \n\n# sütun başına NA sayısı hesaplama ve büyükten küçüğe sıralama (ilk 8 sütun)\nsutun_na &lt;- sort(colSums(is.na(original_data)), decreasing = TRUE) #*\ncat(\"Sütun başına NA sayısı (ilk 8, büyükten küçüğe):\\n\")\n\nSütun başına NA sayısı (ilk 8, büyükten küçüğe):\n\nprint(sutun_na[1:8]) #*\n\nrawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson \n            4178             4178             1409             1409 \n           grade       samplesize            state        startdate \n             429                1                0                0 \n\n\n\n\nNA Değerlerini Değiştirme\n\n# orijinal veriyi kopyalayarak yeni veriyi oluşturma\nnew_data &lt;- original_data\n\n# yeni değerlerin tanımlanması\nna_numeric &lt;- my_birth_year + k\nna_char    &lt;- paste0(my_first, \"_\", k)\n\n# yeni değerlerin yazdırılması\ncat(\"Sayısal NA yerine gelecek değer  :\", na_numeric, \"\\n\")\n\nSayısal NA yerine gelecek değer  : 2014 \n\ncat(\"Karakter/Faktör NA yerine değer  :\", na_char, \"\\n\\n\")\n\nKarakter/Faktör NA yerine değer  : Talha_16 \n\n# sütun türüne göre NA'ların yeni değerler ile değiştirilmesi\nfor (col in names(new_data)) {\n  if (is.numeric(new_data[[col]])) {\n    new_data[[col]][is.na(new_data[[col]])] &lt;- na_numeric\n\n  } else if (is.factor(new_data[[col]])) {\n    levels(new_data[[col]]) &lt;- c(levels(new_data[[col]]), na_char)\n    new_data[[col]][is.na(new_data[[col]])] &lt;- na_char\n\n  } else if (is.character(new_data[[col]])) {\n    new_data[[col]][is.na(new_data[[col]])] &lt;- na_char\n  }\n} #*\n\n\n\nYeni Veri Setinden k Satır Görüntüleme\n\n# veri setinden k satır çekme (k çiftse ilk, k tekse son)\nif (k %% 2 == 0) {\n  cat(\"k çift → yeni verinin ilk\", k, \"satırı:\\n\")\n  knitr::kable(head(new_data, k))\n} else {\n  cat(\"k tek → yeni verinin son\", k, \"satırı:\\n\")\n  knitr::kable(tail(new_data, k))\n}\n\nk çift → yeni verinin ilk 16 satırı:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nstartdate\nenddate\npollster\ngrade\nsamplesize\npopulation\nrawpoll_clinton\nrawpoll_trump\nrawpoll_johnson\nrawpoll_mcmullin\nadjpoll_clinton\nadjpoll_trump\nadjpoll_johnson\nadjpoll_mcmullin\n\n\n\n\nU.S.\n2016-11-03\n2016-11-06\nABC News/Washington Post\nA+\n2220\nlv\n47.00\n43.00\n4.00\n2014\n45.20163\n41.72430\n4.626221\n2014\n\n\nU.S.\n2016-11-01\n2016-11-07\nGoogle Consumer Surveys\nB\n26574\nlv\n38.03\n35.69\n5.46\n2014\n43.34557\n41.21439\n5.175792\n2014\n\n\nU.S.\n2016-11-02\n2016-11-06\nIpsos\nA-\n2195\nlv\n42.00\n39.00\n6.00\n2014\n42.02638\n38.81620\n6.844734\n2014\n\n\nU.S.\n2016-11-04\n2016-11-07\nYouGov\nB\n3677\nlv\n45.00\n41.00\n5.00\n2014\n45.65676\n40.92004\n6.069454\n2014\n\n\nU.S.\n2016-11-03\n2016-11-06\nGravis Marketing\nB-\n16639\nrv\n47.00\n43.00\n3.00\n2014\n46.84089\n42.33184\n3.726098\n2014\n\n\nU.S.\n2016-11-03\n2016-11-06\nFox News/Anderson Robbins Research/Shaw & Company Research\nA\n1295\nlv\n48.00\n44.00\n3.00\n2014\n49.02208\n43.95631\n3.057876\n2014\n\n\nU.S.\n2016-11-02\n2016-11-06\nCBS News/New York Times\nA-\n1426\nlv\n45.00\n41.00\n5.00\n2014\n45.11649\n40.92722\n4.341786\n2014\n\n\nU.S.\n2016-11-03\n2016-11-05\nNBC News/Wall Street Journal\nA-\n1282\nlv\n44.00\n40.00\n6.00\n2014\n43.58576\n40.77325\n5.365788\n2014\n\n\nNew Mexico\n2016-11-06\n2016-11-06\nZia Poll\nTalha_16\n8439\nlv\n46.00\n44.00\n6.00\n2014\n44.82594\n41.59978\n7.870127\n2014\n\n\nU.S.\n2016-11-04\n2016-11-07\nIBD/TIPP\nA-\n1107\nlv\n41.20\n42.70\n7.10\n2014\n42.92745\n42.23545\n6.316175\n2014\n\n\nU.S.\n2016-11-04\n2016-11-06\nSelzer & Company\nA+\n799\nlv\n44.00\n41.00\n4.00\n2014\n44.21714\n40.57082\n4.068708\n2014\n\n\nU.S.\n2016-11-01\n2016-11-04\nAngus Reid Global\nA-\n1151\nlv\n48.00\n44.00\n6.00\n2014\n47.57171\n43.68125\n5.556625\n2014\n\n\nU.S.\n2016-11-03\n2016-11-06\nMonmouth University\nA+\n748\nlv\n50.00\n44.00\n4.00\n2014\n48.86765\n43.39600\n4.838600\n2014\n\n\nVirginia\n2016-11-03\n2016-11-04\nPublic Policy Polling\nB+\n1238\nlv\n48.00\n43.00\n1.00\n2014\n47.43805\n42.32751\n2.207659\n2014\n\n\nU.S.\n2016-11-01\n2016-11-03\nMarist College\nA\n940\nlv\n44.00\n43.00\n6.00\n2014\n42.83406\n43.43819\n4.780429\n2014\n\n\nIowa\n2016-11-01\n2016-11-04\nSelzer & Company\nA+\n800\nlv\n39.00\n46.00\n6.00\n2014\n39.37561\n45.66917\n6.062713\n2014\n\n\n\n\n\n\n\nDoğrulama\n\n# yeni veride toplam NA sayısını bulma ve yazdırma\nkalan_na &lt;- sum(is.na(new_data))\ncat(\"Yeni veri setindeki toplam NA sayısı:\", kalan_na, \"\\n\")\n\nYeni veri setindeki toplam NA sayısı: 0 \n\n# yeni veride NA değer sorgusu\ncat(\"anyNA(new_data):\", anyNA(new_data), \"\\n\")\n\nanyNA(new_data): FALSE \n\n\nBu ödevde “*” işareti ile beliritlen; veri setinden k satırın yazdırılması, sütunlara göre NA değer toplaması, NA değerlerin değiştirilmesi kısımlarında yapay zeka aracından destek alınmıştır ve tarafımca kontrol edilmiştir.",
+    "crumbs": [
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hakkımda",
+    "section": "",
+    "text": "Muhammed Talha Büyük - CV"
+  },
+  {
+    "objectID": "about.html#iş-deneyimi",
+    "href": "about.html#iş-deneyimi",
+    "title": "Hakkımda",
+    "section": "İş Deneyimi",
+    "text": "İş Deneyimi\n\nEmlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş., İnşaat Mühendisi, Ankara, Türkiye, Ağustos 2024 -\nYıldızlar İnşaat ve Ticaret A.Ş. – Ankara 45.000 Seyirci Kapasiteli Stadyum İnşaatı, İnşaat Mühendisi, Ankara, Türkiye, Haziran 2023 – Ağustos 2024"
+  },
+  {
+    "objectID": "about.html#staj-deneyimi",
+    "href": "about.html#staj-deneyimi",
+    "title": "Hakkımda",
+    "section": "Staj Deneyimi",
+    "text": "Staj Deneyimi\n\nMFA Taahhüt İnşaat ve Ticaret A.Ş. – Ankara Jandarma ve Sahil Güvenlik Akademisi, Stajyer İnşaat Mühendisi, Ankara, Türkiye, Ocak 2021 – Mart 2021\nEmlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş. – İstanbul Uluslararası Finans Merkezi, Stajyer İnşaat Mühendisi, Ankara, Türkiye, Temmuz 2020 – Eylül 2020"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Merhaba, Ben Muhammed Talha BÜYÜK",
+    "section": "",
+    "text": "MUY660-İş Analitiği dersi sayfama hoş geldiniz.\nBu sayfada analitik çalışmalarımı paylaşıyorum.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "portfolyo/calisma2.html",
+    "href": "portfolyo/calisma2.html",
+    "title": "Çalışma 2",
+    "section": "",
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "crumbs": [
+      "Çalışma 2"
     ]
   },
   {
@@ -412,151 +159,6 @@
     "crumbs": [
       "Çalışma 2"
     ]
-  },
-  {
-    "objectID": "portfolyo/calisma1.html#b",
-    "href": "portfolyo/calisma1.html#b",
-    "title": "Çalışma 1",
-    "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Çalışma 1"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html",
-    "href": "takim/dusantadic.html",
-    "title": "Dusan Tadic",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#employements",
-    "href": "takim/szymanski.html#employements",
-    "title": "Sebastian Szymański",
-    "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#internships",
-    "href": "takim/szymanski.html#internships",
-    "title": "Sebastian Szymański",
-    "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#işler",
-    "href": "takim/szymanski.html#işler",
-    "title": "Sebastian Szymański",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#stajlar",
-    "href": "takim/szymanski.html#stajlar",
-    "title": "Sebastian Szymański",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
-  },
-  {
-    "objectID": "takim/edindzeko.html#işler",
-    "href": "takim/edindzeko.html#işler",
-    "title": "Edin_Džeko",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
-  },
-  {
-    "objectID": "takim/edindzeko.html#stajlar",
-    "href": "takim/edindzeko.html#stajlar",
-    "title": "Edin_Džeko",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
-  },
-  {
-    "objectID": "takim/fred.html#işler",
-    "href": "takim/fred.html#işler",
-    "title": "Frederico Rodrigues",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
-  },
-  {
-    "objectID": "takim/fred.html#stajlar",
-    "href": "takim/fred.html#stajlar",
-    "title": "Frederico Rodrigues",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html#işler",
-    "href": "takim/dusantadic.html#işler",
-    "title": "Dusan Tadic",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html#stajlar",
-    "href": "takim/dusantadic.html#stajlar",
-    "title": "Dusan Tadic",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "about.html#employements",
-    "href": "about.html#employements",
-    "title": "Hakkımda",
-    "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy"
-  },
-  {
-    "objectID": "about.html#internships",
-    "href": "about.html#internships",
-    "title": "Hakkımda",
-    "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
   },
   {
     "objectID": "posts.html",
