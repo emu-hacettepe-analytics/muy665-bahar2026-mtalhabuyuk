@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024) – Talha’nın Analitik Labı</title>
+<title>Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024) – Talha'nın Analitik Labı</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -337,31 +337,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proje-konusu" id="toc-proje-konusu" class="nav-link active" data-scroll-target="#proje-konusu"><span class="header-section-number">0.1</span> Proje Konusu</a></li>
-  <li><a href="#araştırma-soruları" id="toc-araştırma-soruları" class="nav-link" data-scroll-target="#araştırma-soruları"><span class="header-section-number">0.2</span> Araştırma Soruları</a></li>
-  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">0.3</span> Veri Kaynağı</a></li>
-  <li><a href="#gerekli-paketler" id="toc-gerekli-paketler" class="nav-link" data-scroll-target="#gerekli-paketler"><span class="header-section-number">0.4</span> Gerekli Paketler</a></li>
-  <li><a href="#veri-setinin-görünümü" id="toc-veri-setinin-görünümü" class="nav-link" data-scroll-target="#veri-setinin-görünümü"><span class="header-section-number">0.5</span> Veri Setinin Görünümü</a></li>
-  <li><a href="#verinin-r-ortamına-aktarılması" id="toc-verinin-r-ortamına-aktarılması" class="nav-link" data-scroll-target="#verinin-r-ortamına-aktarılması"><span class="header-section-number">0.6</span> Verinin R Ortamına Aktarılması</a></li>
-  <li><a href="#veri-yapısı-ve-ilk-inceleme" id="toc-veri-yapısı-ve-ilk-inceleme" class="nav-link" data-scroll-target="#veri-yapısı-ve-ilk-inceleme"><span class="header-section-number">0.7</span> Veri Yapısı ve İlk İnceleme</a></li>
-  <li><a href="#türetilmiş-değişkenler" id="toc-türetilmiş-değişkenler" class="nav-link" data-scroll-target="#türetilmiş-değişkenler"><span class="header-section-number">0.8</span> Türetilmiş Değişkenler</a></li>
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">0.9</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#yıllara-göre-nüfus-değişimi" id="toc-yıllara-göre-nüfus-değişimi" class="nav-link" data-scroll-target="#yıllara-göre-nüfus-değişimi"><span class="header-section-number">0.10</span> Yıllara Göre Nüfus Değişimi</a></li>
-  <li><a href="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı" id="toc-yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı"><span class="header-section-number">0.11</span> Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</a></li>
-  <li><a href="#yıllara-göre-toplam-kaza-sayısı" id="toc-yıllara-göre-toplam-kaza-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-toplam-kaza-sayısı"><span class="header-section-number">0.12</span> Yıllara Göre Toplam Kaza Sayısı</a></li>
-  <li><a href="#birlikte-değişim-analizi" id="toc-birlikte-değişim-analizi" class="nav-link" data-scroll-target="#birlikte-değişim-analizi"><span class="header-section-number">0.13</span> Birlikte Değişim Analizi</a></li>
-  <li><a href="#oran-bazlı-analizler" id="toc-oran-bazlı-analizler" class="nav-link" data-scroll-target="#oran-bazlı-analizler"><span class="header-section-number">0.14</span> Oran Bazlı Analizler</a></li>
-  <li><a href="#kişi-başına-kaza-sayısı" id="toc-kişi-başına-kaza-sayısı" class="nav-link" data-scroll-target="#kişi-başına-kaza-sayısı"><span class="header-section-number">0.15</span> 100.000 Kişi Başına Kaza Sayısı</a></li>
-  <li><a href="#araç-başına-kaza-sayısı" id="toc-araç-başına-kaza-sayısı" class="nav-link" data-scroll-target="#araç-başına-kaza-sayısı"><span class="header-section-number">0.16</span> 10.000 Araç Başına Kaza Sayısı</a></li>
-  <li><a href="#kişi-başına-ölüm-sayısı" id="toc-kişi-başına-ölüm-sayısı" class="nav-link" data-scroll-target="#kişi-başına-ölüm-sayısı"><span class="header-section-number">0.17</span> 100.000 Kişi Başına Ölüm Sayısı</a></li>
-  <li><a href="#kişi-başına-yaralı-sayısı" id="toc-kişi-başına-yaralı-sayısı" class="nav-link" data-scroll-target="#kişi-başına-yaralı-sayısı"><span class="header-section-number">0.18</span> 100.000 Kişi Başına Yaralı Sayısı</a></li>
-  <li><a href="#değişkenler-arasındaki-ilişki" id="toc-değişkenler-arasındaki-ilişki" class="nav-link" data-scroll-target="#değişkenler-arasındaki-ilişki"><span class="header-section-number">0.19</span> Değişkenler Arasındaki İlişki</a></li>
-  <li><a href="#araç-sayısı-ile-kaza-sayısı-ilişkisi" id="toc-araç-sayısı-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#araç-sayısı-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.20</span> Araç Sayısı ile Kaza Sayısı İlişkisi</a></li>
-  <li><a href="#nüfus-ile-kaza-sayısı-ilişkisi" id="toc-nüfus-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#nüfus-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.21</span> Nüfus ile Kaza Sayısı İlişkisi</a></li>
-  <li><a href="#bulgular-ve-yorum" id="toc-bulgular-ve-yorum" class="nav-link" data-scroll-target="#bulgular-ve-yorum"><span class="header-section-number">0.22</span> Bulgular ve Yorum</a></li>
-  <li><a href="#sonuç" id="toc-sonuç" class="nav-link" data-scroll-target="#sonuç"><span class="header-section-number">0.23</span> Sonuç</a></li>
-  <li><a href="#kullanılan-araçlar-ve-not" id="toc-kullanılan-araçlar-ve-not" class="nav-link" data-scroll-target="#kullanılan-araçlar-ve-not"><span class="header-section-number">0.24</span> Kullanılan Araçlar ve Not</a></li>
-  <li><a href="#hazırlayanlar" id="toc-hazırlayanlar" class="nav-link" data-scroll-target="#hazırlayanlar"><span class="header-section-number">0.25</span> Hazırlayanlar</a></li>
+  <li><a href="#proje-konusu" id="toc-proje-konusu" class="nav-link active" data-scroll-target="#proje-konusu">Proje Konusu</a></li>
+  <li><a href="#araştırma-soruları" id="toc-araştırma-soruları" class="nav-link" data-scroll-target="#araştırma-soruları">Araştırma Soruları</a></li>
+  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı">Veri Kaynağı</a></li>
+  <li><a href="#gerekli-paketler" id="toc-gerekli-paketler" class="nav-link" data-scroll-target="#gerekli-paketler">Gerekli Paketler</a></li>
+  <li><a href="#veri-setinin-görünümü" id="toc-veri-setinin-görünümü" class="nav-link" data-scroll-target="#veri-setinin-görünümü">Veri Setinin Görünümü</a></li>
+  <li><a href="#verinin-r-ortamına-aktarılması" id="toc-verinin-r-ortamına-aktarılması" class="nav-link" data-scroll-target="#verinin-r-ortamına-aktarılması">Verinin R Ortamına Aktarılması</a></li>
+  <li><a href="#veri-yapısı-ve-ilk-inceleme" id="toc-veri-yapısı-ve-ilk-inceleme" class="nav-link" data-scroll-target="#veri-yapısı-ve-ilk-inceleme">Veri Yapısı ve İlk İnceleme</a></li>
+  <li><a href="#türetilmiş-değişkenler" id="toc-türetilmiş-değişkenler" class="nav-link" data-scroll-target="#türetilmiş-değişkenler">Türetilmiş Değişkenler</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi">Keşifsel Veri Analizi</a></li>
+  <li><a href="#yıllara-göre-nüfus-değişimi" id="toc-yıllara-göre-nüfus-değişimi" class="nav-link" data-scroll-target="#yıllara-göre-nüfus-değişimi">Yıllara Göre Nüfus Değişimi</a></li>
+  <li><a href="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı" id="toc-yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı">Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</a></li>
+  <li><a href="#yıllara-göre-toplam-kaza-sayısı" id="toc-yıllara-göre-toplam-kaza-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-toplam-kaza-sayısı">Yıllara Göre Toplam Kaza Sayısı</a></li>
+  <li><a href="#birlikte-değişim-analizi" id="toc-birlikte-değişim-analizi" class="nav-link" data-scroll-target="#birlikte-değişim-analizi">Birlikte Değişim Analizi</a></li>
+  <li><a href="#oran-bazlı-analizler" id="toc-oran-bazlı-analizler" class="nav-link" data-scroll-target="#oran-bazlı-analizler">Oran Bazlı Analizler</a></li>
+  <li><a href="#kişi-başına-kaza-sayısı" id="toc-kişi-başına-kaza-sayısı" class="nav-link" data-scroll-target="#kişi-başına-kaza-sayısı">100.000 Kişi Başına Kaza Sayısı</a></li>
+  <li><a href="#araç-başına-kaza-sayısı" id="toc-araç-başına-kaza-sayısı" class="nav-link" data-scroll-target="#araç-başına-kaza-sayısı">10.000 Araç Başına Kaza Sayısı</a></li>
+  <li><a href="#kişi-başına-ölüm-sayısı" id="toc-kişi-başına-ölüm-sayısı" class="nav-link" data-scroll-target="#kişi-başına-ölüm-sayısı">100.000 Kişi Başına Ölüm Sayısı</a></li>
+  <li><a href="#kişi-başına-yaralı-sayısı" id="toc-kişi-başına-yaralı-sayısı" class="nav-link" data-scroll-target="#kişi-başına-yaralı-sayısı">100.000 Kişi Başına Yaralı Sayısı</a></li>
+  <li><a href="#değişkenler-arasındaki-ilişki" id="toc-değişkenler-arasındaki-ilişki" class="nav-link" data-scroll-target="#değişkenler-arasındaki-ilişki">Değişkenler Arasındaki İlişki</a></li>
+  <li><a href="#araç-sayısı-ile-kaza-sayısı-ilişkisi" id="toc-araç-sayısı-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#araç-sayısı-ile-kaza-sayısı-ilişkisi">Araç Sayısı ile Kaza Sayısı İlişkisi</a></li>
+  <li><a href="#nüfus-ile-kaza-sayısı-ilişkisi" id="toc-nüfus-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#nüfus-ile-kaza-sayısı-ilişkisi">Nüfus ile Kaza Sayısı İlişkisi</a></li>
+  <li><a href="#bulgular-ve-yorum" id="toc-bulgular-ve-yorum" class="nav-link" data-scroll-target="#bulgular-ve-yorum">Bulgular ve Yorum</a></li>
+  <li><a href="#sonuç" id="toc-sonuç" class="nav-link" data-scroll-target="#sonuç">Sonuç</a></li>
+  <li><a href="#kullanılan-araçlar-ve-not" id="toc-kullanılan-araçlar-ve-not" class="nav-link" data-scroll-target="#kullanılan-araçlar-ve-not">Kullanılan Araçlar ve Not</a></li>
+  <li><a href="#hazırlayanlar" id="toc-hazırlayanlar" class="nav-link" data-scroll-target="#hazırlayanlar">Hazırlayanlar</a></li>
   </ul>
 </nav>
 </nav>
@@ -392,14 +392,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><strong>Projemizle ilgili güncellemelerden haberdar olmak için bu xxxxx bağlantısındaki proje sayfamızı takip edin.</strong></p>
-<p>(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)</p>
-<section id="proje-konusu" class="level3" data-number="0.1">
-<h3 data-number="0.1" class="anchored" data-anchor-id="proje-konusu"><span class="header-section-number">0.1</span> Proje Konusu</h3>
+<section id="proje-konusu" class="level3">
+<h3 class="anchored" data-anchor-id="proje-konusu">Proje Konusu</h3>
 <p>Bu projede, Türkiye’de 2009–2024 yılları arasında nüfus artışı, trafiğe kayıtlı araç sayısı artışı ve trafik kaza sayısı arasındaki ilişki incelenmektedir. Amaç, bu üç göstergenin zaman içindeki değişimini birlikte değerlendirerek aralarındaki benzerlikleri ve farklılıkları ortaya koymaktır. Özellikle araç sayısının arttığı dönemlerde kaza sayısının aynı doğrultuda ilerleyip ilerlemediği analiz edilmekte, farklılaşma görülen yıllar ise yorumlanmaktadır.</p>
 </section>
-<section id="araştırma-soruları" class="level3" data-number="0.2">
-<h3 data-number="0.2" class="anchored" data-anchor-id="araştırma-soruları"><span class="header-section-number">0.2</span> Araştırma Soruları</h3>
+<section id="araştırma-soruları" class="level3">
+<h3 class="anchored" data-anchor-id="araştırma-soruları">Araştırma Soruları</h3>
 <p>Bu proje kapsamında aşağıdaki sorulara yanıt aranacaktır:</p>
 <ol type="1">
 <li>2009–2024 yılları arasında Türkiye nüfusu, trafiğe kayıtlı araç sayısı ve trafik kaza sayısı nasıl değişmiştir?</li>
@@ -408,12 +406,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Araç sayısı artmasına rağmen kaza sayısında düşüş görülen yıllar varsa, bu durum nasıl yorumlanabilir?</li>
 </ol>
 </section>
-<section id="veri-kaynağı" class="level3" data-number="0.3">
-<h3 data-number="0.3" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">0.3</span> Veri Kaynağı</h3>
+<section id="veri-kaynağı" class="level3">
+<h3 class="anchored" data-anchor-id="veri-kaynağı">Veri Kaynağı</h3>
 <p>Projede kullanılan temel veri seti TÜİK kaynaklı yıllık trafik verilerinden oluşturulmuştur. Veri setinde 2009–2024 dönemi için nüfus, trafiğe kayıtlı araç sayısı, toplam kaza sayısı, maddi hasarlı kaza sayısı, ölümlü-yaralanmalı kaza sayısı, ölü sayısı ve yaralı sayısı gibi değişkenler yer almaktadır. Nüfus sütunu da TÜİK verileri kullanılarak veri setine eklenmiştir.</p>
 </section>
-<section id="gerekli-paketler" class="level3" data-number="0.4">
-<h3 data-number="0.4" class="anchored" data-anchor-id="gerekli-paketler"><span class="header-section-number">0.4</span> Gerekli Paketler</h3>
+<section id="gerekli-paketler" class="level3">
+<h3 class="anchored" data-anchor-id="gerekli-paketler">Gerekli Paketler</h3>
 <p>Bu proje kapsamında readxl, dplyr, ggplot2, scales, knitr kütüphaneleri kullanılmıştır.</p>
 <div class="cell">
 <details class="code-fold">
@@ -426,8 +424,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="veri-setinin-görünümü" class="level3" data-number="0.5">
-<h3 data-number="0.5" class="anchored" data-anchor-id="veri-setinin-görünümü"><span class="header-section-number">0.5</span> Veri Setinin Görünümü</h3>
+<section id="veri-setinin-görünümü" class="level3">
+<h3 class="anchored" data-anchor-id="veri-setinin-görünümü">Veri Setinin Görünümü</h3>
 <p>Aşağıda analizde kullanılacak ham veri seti gösterilmektedir.</p>
 <div class="cell">
 <details class="code-fold">
@@ -643,8 +641,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Bu tablo, veri setinin temel yapısını göstermektedir. Veri yıllık gözlemlerden oluşmakta ve her yıl için nüfus, araç sayısı, kaza sayısı, ölü sayısı ve yaralı sayısı gibi temel göstergeleri içermektedir.</p>
 </section>
-<section id="verinin-r-ortamına-aktarılması" class="level3" data-number="0.6">
-<h3 data-number="0.6" class="anchored" data-anchor-id="verinin-r-ortamına-aktarılması"><span class="header-section-number">0.6</span> Verinin R Ortamına Aktarılması</h3>
+<section id="verinin-r-ortamına-aktarılması" class="level3">
+<h3 class="anchored" data-anchor-id="verinin-r-ortamına-aktarılması">Verinin R Ortamına Aktarılması</h3>
 <p>Aşağıda veri setinin analiz için uygun hale getirilmesi gösterilmektedir. Bu aşamada yıl ve diğer değişkenler sayısal formata dönüştürülmüş, boş satırlar temizlenmiştir.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>trafik <span class="ot">&lt;-</span> trafik_raw <span class="sc">%&gt;%</span></span>
@@ -655,8 +653,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(yil))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="veri-yapısı-ve-ilk-inceleme" class="level3" data-number="0.7">
-<h3 data-number="0.7" class="anchored" data-anchor-id="veri-yapısı-ve-ilk-inceleme"><span class="header-section-number">0.7</span> Veri Yapısı ve İlk İnceleme</h3>
+<section id="veri-yapısı-ve-ilk-inceleme" class="level3">
+<h3 class="anchored" data-anchor-id="veri-yapısı-ve-ilk-inceleme">Veri Yapısı ve İlk İnceleme</h3>
 <p>Bu aşamada, analiz için hazırlanan veri setinin yapısı incelenmiştir. Değişken isimleri, veri tipleri ve gözlem sayısı kontrol edilmiştir.</p>
 <div class="cell">
 <details class="code-fold">
@@ -874,8 +872,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu ilk inceleme sonucunda veri setinin yıllara göre düzenli gözlemler içerdiği ve temel trafik göstergelerini karşılaştırmalı biçimde incelemeye uygun olduğu görülmüştür.</p>
 </section>
-<section id="türetilmiş-değişkenler" class="level3" data-number="0.8">
-<h3 data-number="0.8" class="anchored" data-anchor-id="türetilmiş-değişkenler"><span class="header-section-number">0.8</span> Türetilmiş Değişkenler</h3>
+<section id="türetilmiş-değişkenler" class="level3">
+<h3 class="anchored" data-anchor-id="türetilmiş-değişkenler">Türetilmiş Değişkenler</h3>
 <p>Sadece ham sayıları incelemek yeterli olmayacağı için, nüfus ve araç sayısına göre normalize edilmiş yeni göstergeler oluşturulmuştur.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>trafik <span class="ot">&lt;-</span> trafik <span class="sc">%&gt;%</span></span>
@@ -889,12 +887,12 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu göstergeler sayesinde mutlak artışların yanında göreli risk düzeyi de değerlendirilebilmektedir.</p>
 </section>
-<section id="keşifsel-veri-analizi" class="level3" data-number="0.9">
-<h3 data-number="0.9" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">0.9</span> Keşifsel Veri Analizi</h3>
+<section id="keşifsel-veri-analizi" class="level3">
+<h3 class="anchored" data-anchor-id="keşifsel-veri-analizi">Keşifsel Veri Analizi</h3>
 <p>Bu bölümde Türkiye nüfusunun 2009 - 2024 yılları arasındaki değişimi, Türkiye’de bu yıllarda trafiğe kayıtlı araç sayısındaki değişim ve bu yıllarda meydana gelen kaza sayısı grafiksel olarak ifade edilmiştir.</p>
 </section>
-<section id="yıllara-göre-nüfus-değişimi" class="level3" data-number="0.10">
-<h3 data-number="0.10" class="anchored" data-anchor-id="yıllara-göre-nüfus-değişimi"><span class="header-section-number">0.10</span> Yıllara Göre Nüfus Değişimi</h3>
+<section id="yıllara-göre-nüfus-değişimi" class="level3">
+<h3 class="anchored" data-anchor-id="yıllara-göre-nüfus-değişimi">Yıllara Göre Nüfus Değişimi</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -920,8 +918,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, 2009–2024 döneminde Türkiye nüfusunun genel artış eğilimini göstermektedir.</p>
 </section>
-<section id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="level3" data-number="0.11">
-<h3 data-number="0.11" class="anchored" data-anchor-id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı"><span class="header-section-number">0.11</span> Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</h3>
+<section id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı">Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -947,8 +945,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, araç sayısının yıllar içinde nasıl değiştiğini göstermektedir.</p>
 </section>
-<section id="yıllara-göre-toplam-kaza-sayısı" class="level3" data-number="0.12">
-<h3 data-number="0.12" class="anchored" data-anchor-id="yıllara-göre-toplam-kaza-sayısı"><span class="header-section-number">0.12</span> Yıllara Göre Toplam Kaza Sayısı</h3>
+<section id="yıllara-göre-toplam-kaza-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="yıllara-göre-toplam-kaza-sayısı">Yıllara Göre Toplam Kaza Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -974,8 +972,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, toplam kaza sayısındaki yıllık değişimi göstermektedir.</p>
 </section>
-<section id="birlikte-değişim-analizi" class="level3" data-number="0.13">
-<h3 data-number="0.13" class="anchored" data-anchor-id="birlikte-değişim-analizi"><span class="header-section-number">0.13</span> Birlikte Değişim Analizi</h3>
+<section id="birlikte-değişim-analizi" class="level3">
+<h3 class="anchored" data-anchor-id="birlikte-değişim-analizi">Birlikte Değişim Analizi</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1013,11 +1011,11 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Üç temel değişkenin yıllar içindeki değişimini daha rahat kıyaslayabilmek için, bu grafikte değişkenler 2009 yılı 100 kabul edilerek endekslenmiştir. Böylece nüfus, araç sayısı ve kaza sayısının yıllar içindeki artış hızları aynı ölçekte karşılaştırılabilmiştir.</p>
 </section>
-<section id="oran-bazlı-analizler" class="level3" data-number="0.14">
-<h3 data-number="0.14" class="anchored" data-anchor-id="oran-bazlı-analizler"><span class="header-section-number">0.14</span> Oran Bazlı Analizler</h3>
+<section id="oran-bazlı-analizler" class="level3">
+<h3 class="anchored" data-anchor-id="oran-bazlı-analizler">Oran Bazlı Analizler</h3>
 </section>
-<section id="kişi-başına-kaza-sayısı" class="level3" data-number="0.15">
-<h3 data-number="0.15" class="anchored" data-anchor-id="kişi-başına-kaza-sayısı"><span class="header-section-number">0.15</span> 100.000 Kişi Başına Kaza Sayısı</h3>
+<section id="kişi-başına-kaza-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="kişi-başına-kaza-sayısı">100.000 Kişi Başına Kaza Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1042,8 +1040,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu oran, nüfus artışından bağımsız olarak kaza yoğunluğunu görmeyi sağlar.</p>
 </section>
-<section id="araç-başına-kaza-sayısı" class="level3" data-number="0.16">
-<h3 data-number="0.16" class="anchored" data-anchor-id="araç-başına-kaza-sayısı"><span class="header-section-number">0.16</span> 10.000 Araç Başına Kaza Sayısı</h3>
+<section id="araç-başına-kaza-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="araç-başına-kaza-sayısı">10.000 Araç Başına Kaza Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1068,8 +1066,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, araç sayısı artsa bile araç başına düşen kaza riskinin nasıl değiştiğini göstermektedir.</p>
 </section>
-<section id="kişi-başına-ölüm-sayısı" class="level3" data-number="0.17">
-<h3 data-number="0.17" class="anchored" data-anchor-id="kişi-başına-ölüm-sayısı"><span class="header-section-number">0.17</span> 100.000 Kişi Başına Ölüm Sayısı</h3>
+<section id="kişi-başına-ölüm-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="kişi-başına-ölüm-sayısı">100.000 Kişi Başına Ölüm Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1094,8 +1092,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, kaza sayısından bağımsız olarak kaza başına düşen ölüm oranını ifade etmektedir.</p>
 </section>
-<section id="kişi-başına-yaralı-sayısı" class="level3" data-number="0.18">
-<h3 data-number="0.18" class="anchored" data-anchor-id="kişi-başına-yaralı-sayısı"><span class="header-section-number">0.18</span> 100.000 Kişi Başına Yaralı Sayısı</h3>
+<section id="kişi-başına-yaralı-sayısı" class="level3">
+<h3 class="anchored" data-anchor-id="kişi-başına-yaralı-sayısı">100.000 Kişi Başına Yaralı Sayısı</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1120,12 +1118,12 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, kaza sayısından bağımsız olarak kaza başına düşen yaralanma oranını ifade etmektedir.</p>
 </section>
-<section id="değişkenler-arasındaki-ilişki" class="level3" data-number="0.19">
-<h3 data-number="0.19" class="anchored" data-anchor-id="değişkenler-arasındaki-ilişki"><span class="header-section-number">0.19</span> Değişkenler Arasındaki İlişki</h3>
+<section id="değişkenler-arasındaki-ilişki" class="level3">
+<h3 class="anchored" data-anchor-id="değişkenler-arasındaki-ilişki">Değişkenler Arasındaki İlişki</h3>
 <p>Bu bölümde nüfus, araç sayısı ve kaza sayısındaki ilişki grafiksel olarak ifade edilerek incelenmiştir.</p>
 </section>
-<section id="araç-sayısı-ile-kaza-sayısı-ilişkisi" class="level3" data-number="0.20">
-<h3 data-number="0.20" class="anchored" data-anchor-id="araç-sayısı-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.20</span> Araç Sayısı ile Kaza Sayısı İlişkisi</h3>
+<section id="araç-sayısı-ile-kaza-sayısı-ilişkisi" class="level3">
+<h3 class="anchored" data-anchor-id="araç-sayısı-ile-kaza-sayısı-ilişkisi">Araç Sayısı ile Kaza Sayısı İlişkisi</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1151,8 +1149,8 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 <p>Bu grafik, araç sayısı ile kaza sayısı arasında genel ilişkinin yönünü göstermektedir.</p>
 </section>
-<section id="nüfus-ile-kaza-sayısı-ilişkisi" class="level3" data-number="0.21">
-<h3 data-number="0.21" class="anchored" data-anchor-id="nüfus-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.21</span> Nüfus ile Kaza Sayısı İlişkisi</h3>
+<section id="nüfus-ile-kaza-sayısı-ilişkisi" class="level3">
+<h3 class="anchored" data-anchor-id="nüfus-ile-kaza-sayısı-ilişkisi">Nüfus ile Kaza Sayısı İlişkisi</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Kodu göstermek için tıklayınız</summary>
@@ -1177,35 +1175,35 @@ $ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 28
 </div>
 </div>
 </section>
-<section id="bulgular-ve-yorum" class="level3" data-number="0.22">
-<h3 data-number="0.22" class="anchored" data-anchor-id="bulgular-ve-yorum"><span class="header-section-number">0.22</span> Bulgular ve Yorum</h3>
+<section id="bulgular-ve-yorum" class="level3">
+<h3 class="anchored" data-anchor-id="bulgular-ve-yorum">Bulgular ve Yorum</h3>
 <p>Elde edilen bulgular incelendiğinde, 2009–2024 döneminde Türkiye nüfusunun düzenli olarak arttığı, ancak trafiğe kayıtlı araç sayısındaki artışın daha yüksek olduğu görülmektedir. Buna rağmen trafik kazaları her yıl aynı şekilde artmamış, bazı yıllarda düşüş ve dalgalanmalar yaşanmıştır. Bu durum, trafik kazalarının yalnızca araç sayısıyla açıklanamayacağını göstermektedir.</p>
 <p>Grafikler değerlendirildiğinde, araç sayısı sürekli artmasına rağmen kaza ve ölüm oranlarının aynı hızda yükselmediği dikkat çekmektedir. Bu durumun; araç güvenlik sistemlerindeki gelişmeler, yol altyapısındaki iyileştirmeler, trafik denetimlerinin artması ve sürücü davranışlarındaki değişimlerle ilişkili olabileceği düşünülmektedir.</p>
 <p>Oran bazlı göstergeler incelendiğinde, toplam değerler artsa bile bazı dönemlerde göreli riskin sabit kaldığı veya azaldığı görülmektedir. Bu nedenle trafik güvenliğini değerlendirirken yalnızca toplam kaza sayısına değil, nüfus ve araç sayısına göre normalize edilmiş verilere de bakılması gerekmektedir.</p>
 <p>2020 yılı verileri ayrıca dikkat çekmektedir. Covid-19 pandemisi nedeniyle uygulanan kısıtlamalar sonucunda trafik yoğunluğu azalmış ve buna bağlı olarak trafik kazalarında belirgin bir düşüş görülmüştür. Bu durum, trafik yoğunluğu ile kaza sayısı arasında doğrudan bir ilişki olduğunu göstermektedir.</p>
 <p>Genel olarak değerlendirildiğinde, Türkiye’de araç sayısındaki hızlı artışa rağmen trafik güvenliği göstergelerinin aynı ölçüde kötüleşmemesi; altyapı yatırımları, denetim mekanizmaları ve güvenlik teknolojilerinin etkili olduğunu düşündürmektedir.</p>
 </section>
-<section id="sonuç" class="level3" data-number="0.23">
-<h3 data-number="0.23" class="anchored" data-anchor-id="sonuç"><span class="header-section-number">0.23</span> Sonuç</h3>
+<section id="sonuç" class="level3">
+<h3 class="anchored" data-anchor-id="sonuç">Sonuç</h3>
 <p>Bu projede, Türkiye’de 2009–2024 yılları arasında nüfus, trafiğe kayıtlı araç sayısı ve trafik kazaları arasındaki ilişki incelenmiştir. Analiz sonucunda araç sayısının nüfustan daha hızlı arttığı, ancak trafik kazalarının aynı hızda artmadığı görülmüştür.</p>
 <p>Elde edilen bulgular, trafik güvenliğinin yalnızca araç sayısına bağlı olmadığını; yol altyapısı, araç teknolojileri, denetimler ve sürücü davranışları gibi farklı faktörlerden de etkilendiğini göstermektedir. Özellikle oran bazlı göstergeler incelendiğinde, bazı dönemlerde toplam değerler artsa bile göreli riskin azaldığı görülmüştür. Pandemi döneminde trafik yoğunluğunun azalmasıyla birlikte kaza sayılarında da düşüş yaşanması, trafik hareketliliği ile kaza oranları arasındaki ilişkiyi desteklemektedir.</p>
 <p>Sonuç olarak, Türkiye’de artan araçlaşmaya rağmen trafik güvenliği göstergelerinin belirli ölçüde kontrol altında tutulabildiği görülmektedir. Ancak trafik kazalarının azaltılması için denetimlerin, sürücü eğitimlerinin ve altyapı çalışmalarının devam etmesi gerektiği değerlendirilmektedir.</p>
 </section>
-<section id="kullanılan-araçlar-ve-not" class="level3" data-number="0.24">
-<h3 data-number="0.24" class="anchored" data-anchor-id="kullanılan-araçlar-ve-not"><span class="header-section-number">0.24</span> Kullanılan Araçlar ve Not</h3>
+<section id="kullanılan-araçlar-ve-not" class="level3">
+<h3 class="anchored" data-anchor-id="kullanılan-araçlar-ve-not">Kullanılan Araçlar ve Not</h3>
 <p>Bu proje R programlama dili kullanılarak hazırlanmış, Quarto ile raporlanmış ve GitHub Pages üzerinde yayımlanmıştır.</p>
 <p>Bu çalışmada analiz sürecini desteklemek amacıyla yapay zekâ araçlarından yararlanılmıştır. Nihai değerlendirme, yorumlama ve yazım aşamaları tarafımızca gözden geçirilmiştir.</p>
 </section>
-<section id="hazırlayanlar" class="level3" data-number="0.25">
-<h3 data-number="0.25" class="anchored" data-anchor-id="hazırlayanlar"><span class="header-section-number">0.25</span> Hazırlayanlar</h3>
-<section id="erdem-aslanyilmaz" class="level4" data-number="0.25.1">
-<h4 data-number="0.25.1" class="anchored" data-anchor-id="erdem-aslanyilmaz"><span class="header-section-number">0.25.1</span> Erdem ASLANYILMAZ</h4>
+<section id="hazırlayanlar" class="level3">
+<h3 class="anchored" data-anchor-id="hazırlayanlar">Hazırlayanlar</h3>
+<section id="erdem-aslanyilmaz" class="level4">
+<h4 class="anchored" data-anchor-id="erdem-aslanyilmaz">Erdem ASLANYILMAZ</h4>
 </section>
-<section id="muhammed-talha-büyük" class="level4" data-number="0.25.2">
-<h4 data-number="0.25.2" class="anchored" data-anchor-id="muhammed-talha-büyük"><span class="header-section-number">0.25.2</span> Muhammed Talha BÜYÜK</h4>
+<section id="muhammed-talha-büyük" class="level4">
+<h4 class="anchored" data-anchor-id="muhammed-talha-büyük">Muhammed Talha BÜYÜK</h4>
 </section>
-<section id="oğuzhan-şenel" class="level4" data-number="0.25.3">
-<h4 data-number="0.25.3" class="anchored" data-anchor-id="oğuzhan-şenel"><span class="header-section-number">0.25.3</span> Oğuzhan ŞENEL</h4>
+<section id="oğuzhan-şenel" class="level4">
+<h4 class="anchored" data-anchor-id="oğuzhan-şenel">Oğuzhan ŞENEL</h4>
 
 
 </section>

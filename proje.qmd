@@ -3,18 +3,15 @@ title: "Proje X (proje adını yazınız)"
 number-sections: true
 ---
 
-**Projemizle ilgili güncellemelerden haberdar olmak için bu xxxxx bağlantısındaki proje sayfamızı takip edin.**
-
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
-
 ---
-title: "Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024)"
+title: "Türkiye'de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024)"
 format:
   html:
     toc: true
     toc-location: left
     code-fold: true
     code-summary: "Kodu göstermek için tıklayınız"
+    number-sections: false
 execute:
   warning: false
   message: false
