@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proje X (proje adını yazınız) – Talha’nın Analitik Labı</title>
+<title>Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024) – Talha’nın Analitik Labı</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -302,22 +337,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</a></li>
-  <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri"><span class="header-section-number">2</span> Veri</a>
-  <ul class="collapse">
-  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</a></li>
-  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</a></li>
-  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</a></li>
-  </ul></li>
-  <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
-  <ul class="collapse">
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</a></li>
-  </ul></li>
-  <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
+  <li><a href="#proje-konusu" id="toc-proje-konusu" class="nav-link active" data-scroll-target="#proje-konusu"><span class="header-section-number">0.1</span> Proje Konusu</a></li>
+  <li><a href="#araştırma-soruları" id="toc-araştırma-soruları" class="nav-link" data-scroll-target="#araştırma-soruları"><span class="header-section-number">0.2</span> Araştırma Soruları</a></li>
+  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">0.3</span> Veri Kaynağı</a></li>
+  <li><a href="#gerekli-paketler" id="toc-gerekli-paketler" class="nav-link" data-scroll-target="#gerekli-paketler"><span class="header-section-number">0.4</span> Gerekli Paketler</a></li>
+  <li><a href="#veri-setinin-görünümü" id="toc-veri-setinin-görünümü" class="nav-link" data-scroll-target="#veri-setinin-görünümü"><span class="header-section-number">0.5</span> Veri Setinin Görünümü</a></li>
+  <li><a href="#verinin-r-ortamına-aktarılması" id="toc-verinin-r-ortamına-aktarılması" class="nav-link" data-scroll-target="#verinin-r-ortamına-aktarılması"><span class="header-section-number">0.6</span> Verinin R Ortamına Aktarılması</a></li>
+  <li><a href="#veri-yapısı-ve-ilk-inceleme" id="toc-veri-yapısı-ve-ilk-inceleme" class="nav-link" data-scroll-target="#veri-yapısı-ve-ilk-inceleme"><span class="header-section-number">0.7</span> Veri Yapısı ve İlk İnceleme</a></li>
+  <li><a href="#türetilmiş-değişkenler" id="toc-türetilmiş-değişkenler" class="nav-link" data-scroll-target="#türetilmiş-değişkenler"><span class="header-section-number">0.8</span> Türetilmiş Değişkenler</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">0.9</span> Keşifsel Veri Analizi</a></li>
+  <li><a href="#yıllara-göre-nüfus-değişimi" id="toc-yıllara-göre-nüfus-değişimi" class="nav-link" data-scroll-target="#yıllara-göre-nüfus-değişimi"><span class="header-section-number">0.10</span> Yıllara Göre Nüfus Değişimi</a></li>
+  <li><a href="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı" id="toc-yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-trafiğe-kayıtlı-araç-sayısı"><span class="header-section-number">0.11</span> Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</a></li>
+  <li><a href="#yıllara-göre-toplam-kaza-sayısı" id="toc-yıllara-göre-toplam-kaza-sayısı" class="nav-link" data-scroll-target="#yıllara-göre-toplam-kaza-sayısı"><span class="header-section-number">0.12</span> Yıllara Göre Toplam Kaza Sayısı</a></li>
+  <li><a href="#birlikte-değişim-analizi" id="toc-birlikte-değişim-analizi" class="nav-link" data-scroll-target="#birlikte-değişim-analizi"><span class="header-section-number">0.13</span> Birlikte Değişim Analizi</a></li>
+  <li><a href="#oran-bazlı-analizler" id="toc-oran-bazlı-analizler" class="nav-link" data-scroll-target="#oran-bazlı-analizler"><span class="header-section-number">0.14</span> Oran Bazlı Analizler</a></li>
+  <li><a href="#kişi-başına-kaza-sayısı" id="toc-kişi-başına-kaza-sayısı" class="nav-link" data-scroll-target="#kişi-başına-kaza-sayısı"><span class="header-section-number">0.15</span> 100.000 Kişi Başına Kaza Sayısı</a></li>
+  <li><a href="#araç-başına-kaza-sayısı" id="toc-araç-başına-kaza-sayısı" class="nav-link" data-scroll-target="#araç-başına-kaza-sayısı"><span class="header-section-number">0.16</span> 10.000 Araç Başına Kaza Sayısı</a></li>
+  <li><a href="#kişi-başına-ölüm-sayısı" id="toc-kişi-başına-ölüm-sayısı" class="nav-link" data-scroll-target="#kişi-başına-ölüm-sayısı"><span class="header-section-number">0.17</span> 100.000 Kişi Başına Ölüm Sayısı</a></li>
+  <li><a href="#kişi-başına-yaralı-sayısı" id="toc-kişi-başına-yaralı-sayısı" class="nav-link" data-scroll-target="#kişi-başına-yaralı-sayısı"><span class="header-section-number">0.18</span> 100.000 Kişi Başına Yaralı Sayısı</a></li>
+  <li><a href="#değişkenler-arasındaki-ilişki" id="toc-değişkenler-arasındaki-ilişki" class="nav-link" data-scroll-target="#değişkenler-arasındaki-ilişki"><span class="header-section-number">0.19</span> Değişkenler Arasındaki İlişki</a></li>
+  <li><a href="#araç-sayısı-ile-kaza-sayısı-ilişkisi" id="toc-araç-sayısı-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#araç-sayısı-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.20</span> Araç Sayısı ile Kaza Sayısı İlişkisi</a></li>
+  <li><a href="#nüfus-ile-kaza-sayısı-ilişkisi" id="toc-nüfus-ile-kaza-sayısı-ilişkisi" class="nav-link" data-scroll-target="#nüfus-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.21</span> Nüfus ile Kaza Sayısı İlişkisi</a></li>
+  <li><a href="#bulgular-ve-yorum" id="toc-bulgular-ve-yorum" class="nav-link" data-scroll-target="#bulgular-ve-yorum"><span class="header-section-number">0.22</span> Bulgular ve Yorum</a></li>
+  <li><a href="#sonuç" id="toc-sonuç" class="nav-link" data-scroll-target="#sonuç"><span class="header-section-number">0.23</span> Sonuç</a></li>
+  <li><a href="#kullanılan-araçlar-ve-not" id="toc-kullanılan-araçlar-ve-not" class="nav-link" data-scroll-target="#kullanılan-araçlar-ve-not"><span class="header-section-number">0.24</span> Kullanılan Araçlar ve Not</a></li>
+  <li><a href="#hazırlayanlar" id="toc-hazırlayanlar" class="nav-link" data-scroll-target="#hazırlayanlar"><span class="header-section-number">0.25</span> Hazırlayanlar</a></li>
   </ul>
 </nav>
 </nav>
@@ -331,7 +375,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proje X (proje adını yazınız)</h1>
+<h1 class="title">Türkiye’de Nüfus, Araç Artışı ve Trafik Kazaları İlişkisi (2009–2024)</h1>
 </div>
 
 
@@ -350,55 +394,821 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>Projemizle ilgili güncellemelerden haberdar olmak için bu xxxxx bağlantısındaki proje sayfamızı takip edin.</strong></p>
 <p>(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)</p>
-<section id="proje-genel-bakış-ve-kapsamı" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</h1>
-<p>xxxxxx</p>
+<section id="proje-konusu" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="proje-konusu"><span class="header-section-number">0.1</span> Proje Konusu</h3>
+<p>Bu projede, Türkiye’de 2009–2024 yılları arasında nüfus artışı, trafiğe kayıtlı araç sayısı artışı ve trafik kaza sayısı arasındaki ilişki incelenmektedir. Amaç, bu üç göstergenin zaman içindeki değişimini birlikte değerlendirerek aralarındaki benzerlikleri ve farklılıkları ortaya koymaktır. Özellikle araç sayısının arttığı dönemlerde kaza sayısının aynı doğrultuda ilerleyip ilerlemediği analiz edilmekte, farklılaşma görülen yıllar ise yorumlanmaktadır.</p>
 </section>
-<section id="veri" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
-<p>xxxxxx</p>
-<section id="veri-kaynağı" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</h2>
-<p>xxxxxx</p>
+<section id="araştırma-soruları" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="araştırma-soruları"><span class="header-section-number">0.2</span> Araştırma Soruları</h3>
+<p>Bu proje kapsamında aşağıdaki sorulara yanıt aranacaktır:</p>
+<ol type="1">
+<li>2009–2024 yılları arasında Türkiye nüfusu, trafiğe kayıtlı araç sayısı ve trafik kaza sayısı nasıl değişmiştir?</li>
+<li>Araç sayısındaki artış ile kaza sayısındaki artış aynı yönde ve benzer hızda mıdır?</li>
+<li>Nüfusa göre ve araç sayısına göre hesaplanan oranlar incelendiğinde trafik riskinde artış mı azalış mı görülmektedir?</li>
+<li>Araç sayısı artmasına rağmen kaza sayısında düşüş görülen yıllar varsa, bu durum nasıl yorumlanabilir?</li>
+</ol>
 </section>
-<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</h2>
-<p>xxxxxx</p>
+<section id="veri-kaynağı" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">0.3</span> Veri Kaynağı</h3>
+<p>Projede kullanılan temel veri seti TÜİK kaynaklı yıllık trafik verilerinden oluşturulmuştur. Veri setinde 2009–2024 dönemi için nüfus, trafiğe kayıtlı araç sayısı, toplam kaza sayısı, maddi hasarlı kaza sayısı, ölümlü-yaralanmalı kaza sayısı, ölü sayısı ve yaralı sayısı gibi değişkenler yer almaktadır. Nüfus sütunu da TÜİK verileri kullanılarak veri setine eklenmiştir.</p>
 </section>
-<section id="tercih-sebebi" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</h2>
-<p>xxxxxx</p>
+<section id="gerekli-paketler" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="gerekli-paketler"><span class="header-section-number">0.4</span> Gerekli Paketler</h3>
+<p>Bu proje kapsamında readxl, dplyr, ggplot2, scales, knitr kütüphaneleri kullanılmıştır.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
 </section>
-<section id="ön-işleme" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</h2>
-<p>xxxxxx</p>
+<section id="veri-setinin-görünümü" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="veri-setinin-görünümü"><span class="header-section-number">0.5</span> Veri Setinin Görünümü</h3>
+<p>Aşağıda analizde kullanılacak ham veri seti gösterilmektedir.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>trafik_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/trafik_veri.xlsx"</span>, <span class="at">skip =</span> <span class="dv">5</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(trafik_raw) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"yil"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"nufus"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"arac_sayisi"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"kaza_sayisi"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"maddi_hasarli_kaza"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olumlu_yaralanmali_kaza"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olu_sayisi"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"yarali_sayisi"</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(trafik_raw, <span class="at">caption =</span> <span class="st">"Ham veri seti"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Ham veri seti</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 10%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">yil</th>
+<th style="text-align: right;">nufus</th>
+<th style="text-align: right;">arac_sayisi</th>
+<th style="text-align: right;">kaza_sayisi</th>
+<th style="text-align: right;">maddi_hasarli_kaza</th>
+<th style="text-align: right;">olumlu_yaralanmali_kaza</th>
+<th style="text-align: right;">olu_sayisi</th>
+<th style="text-align: right;">yarali_sayisi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2009</td>
+<td style="text-align: right;">72561312</td>
+<td style="text-align: right;">14316700</td>
+<td style="text-align: right;">1053346</td>
+<td style="text-align: right;">942225</td>
+<td style="text-align: right;">111121</td>
+<td style="text-align: right;">4324</td>
+<td style="text-align: right;">201380</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">73722988</td>
+<td style="text-align: right;">15095603</td>
+<td style="text-align: right;">1106201</td>
+<td style="text-align: right;">989397</td>
+<td style="text-align: right;">116804</td>
+<td style="text-align: right;">4045</td>
+<td style="text-align: right;">211496</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2011</td>
+<td style="text-align: right;">74724269</td>
+<td style="text-align: right;">16089528</td>
+<td style="text-align: right;">1228928</td>
+<td style="text-align: right;">1097083</td>
+<td style="text-align: right;">131845</td>
+<td style="text-align: right;">3835</td>
+<td style="text-align: right;">238074</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">75627384</td>
+<td style="text-align: right;">17033413</td>
+<td style="text-align: right;">1296634</td>
+<td style="text-align: right;">1143082</td>
+<td style="text-align: right;">153552</td>
+<td style="text-align: right;">3750</td>
+<td style="text-align: right;">268079</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">76667864</td>
+<td style="text-align: right;">17939447</td>
+<td style="text-align: right;">1207354</td>
+<td style="text-align: right;">1046048</td>
+<td style="text-align: right;">161306</td>
+<td style="text-align: right;">3685</td>
+<td style="text-align: right;">274829</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">77695904</td>
+<td style="text-align: right;">18828721</td>
+<td style="text-align: right;">1199010</td>
+<td style="text-align: right;">1030498</td>
+<td style="text-align: right;">168512</td>
+<td style="text-align: right;">3524</td>
+<td style="text-align: right;">285059</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">78741053</td>
+<td style="text-align: right;">19994472</td>
+<td style="text-align: right;">1313359</td>
+<td style="text-align: right;">1130348</td>
+<td style="text-align: right;">183011</td>
+<td style="text-align: right;">7530</td>
+<td style="text-align: right;">304421</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">79814871</td>
+<td style="text-align: right;">21090424</td>
+<td style="text-align: right;">1182491</td>
+<td style="text-align: right;">997363</td>
+<td style="text-align: right;">185128</td>
+<td style="text-align: right;">7300</td>
+<td style="text-align: right;">303812</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">80810525</td>
+<td style="text-align: right;">22218945</td>
+<td style="text-align: right;">1202716</td>
+<td style="text-align: right;">1020047</td>
+<td style="text-align: right;">182669</td>
+<td style="text-align: right;">7427</td>
+<td style="text-align: right;">300383</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">82003882</td>
+<td style="text-align: right;">22865921</td>
+<td style="text-align: right;">1229364</td>
+<td style="text-align: right;">1042832</td>
+<td style="text-align: right;">186532</td>
+<td style="text-align: right;">6675</td>
+<td style="text-align: right;">307071</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">83154997</td>
+<td style="text-align: right;">23156975</td>
+<td style="text-align: right;">1168144</td>
+<td style="text-align: right;">993248</td>
+<td style="text-align: right;">174896</td>
+<td style="text-align: right;">5473</td>
+<td style="text-align: right;">283234</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">83614362</td>
+<td style="text-align: right;">24144857</td>
+<td style="text-align: right;">983808</td>
+<td style="text-align: right;">833533</td>
+<td style="text-align: right;">150275</td>
+<td style="text-align: right;">4866</td>
+<td style="text-align: right;">226266</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">84680273</td>
+<td style="text-align: right;">25249119</td>
+<td style="text-align: right;">1186353</td>
+<td style="text-align: right;">998390</td>
+<td style="text-align: right;">187963</td>
+<td style="text-align: right;">5362</td>
+<td style="text-align: right;">274615</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">85279553</td>
+<td style="text-align: right;">26482847</td>
+<td style="text-align: right;">1232957</td>
+<td style="text-align: right;">1035696</td>
+<td style="text-align: right;">197261</td>
+<td style="text-align: right;">5229</td>
+<td style="text-align: right;">288696</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">85372377</td>
+<td style="text-align: right;">28740492</td>
+<td style="text-align: right;">1314136</td>
+<td style="text-align: right;">1079065</td>
+<td style="text-align: right;">235071</td>
+<td style="text-align: right;">6548</td>
+<td style="text-align: right;">350855</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">86249808</td>
+<td style="text-align: right;">31301389</td>
+<td style="text-align: right;">1444026</td>
+<td style="text-align: right;">1177172</td>
+<td style="text-align: right;">266854</td>
+<td style="text-align: right;">6351</td>
+<td style="text-align: right;">385117</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Bu tablo, veri setinin temel yapısını göstermektedir. Veri yıllık gözlemlerden oluşmakta ve her yıl için nüfus, araç sayısı, kaza sayısı, ölü sayısı ve yaralı sayısı gibi temel göstergeleri içermektedir.</p>
 </section>
+<section id="verinin-r-ortamına-aktarılması" class="level3" data-number="0.6">
+<h3 data-number="0.6" class="anchored" data-anchor-id="verinin-r-ortamına-aktarılması"><span class="header-section-number">0.6</span> Verinin R Ortamına Aktarılması</h3>
+<p>Aşağıda veri setinin analiz için uygun hale getirilmesi gösterilmektedir. Bu aşamada yıl ve diğer değişkenler sayısal formata dönüştürülmüş, boş satırlar temizlenmiştir.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>trafik <span class="ot">&lt;-</span> trafik_raw <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">yil =</span> <span class="fu">as.numeric</span>(yil),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="sc">-</span>yil, as.numeric)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(yil))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="analiz" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Analiz</h1>
-<p>xxxxxx</p>
-<section id="keşifsel-veri-analizi" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</h2>
-<p>xxxxxx</p>
+<section id="veri-yapısı-ve-ilk-inceleme" class="level3" data-number="0.7">
+<h3 data-number="0.7" class="anchored" data-anchor-id="veri-yapısı-ve-ilk-inceleme"><span class="header-section-number">0.7</span> Veri Yapısı ve İlk İnceleme</h3>
+<p>Bu aşamada, analiz için hazırlanan veri setinin yapısı incelenmiştir. Değişken isimleri, veri tipleri ve gözlem sayısı kontrol edilmiştir.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(trafik)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 16
+Columns: 8
+$ yil                     &lt;dbl&gt; 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016…
+$ nufus                   &lt;dbl&gt; 72561312, 73722988, 74724269, 75627384, 766678…
+$ arac_sayisi             &lt;dbl&gt; 14316700, 15095603, 16089528, 17033413, 179394…
+$ kaza_sayisi             &lt;dbl&gt; 1053346, 1106201, 1228928, 1296634, 1207354, 1…
+$ maddi_hasarli_kaza      &lt;dbl&gt; 942225, 989397, 1097083, 1143082, 1046048, 103…
+$ olumlu_yaralanmali_kaza &lt;dbl&gt; 111121, 116804, 131845, 153552, 161306, 168512…
+$ olu_sayisi              &lt;dbl&gt; 4324, 4045, 3835, 3750, 3685, 3524, 7530, 7300…
+$ yarali_sayisi           &lt;dbl&gt; 201380, 211496, 238074, 268079, 274829, 285059…</code></pre>
+</div>
+</div>
+<p>Aşağıda temizlenmiş veri setinin ilk birkaç satırı gösterilmektedir.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(trafik, <span class="at">caption =</span> <span class="st">"Temizlenmiş veri seti"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Temizlenmiş veri seti</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 10%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">yil</th>
+<th style="text-align: right;">nufus</th>
+<th style="text-align: right;">arac_sayisi</th>
+<th style="text-align: right;">kaza_sayisi</th>
+<th style="text-align: right;">maddi_hasarli_kaza</th>
+<th style="text-align: right;">olumlu_yaralanmali_kaza</th>
+<th style="text-align: right;">olu_sayisi</th>
+<th style="text-align: right;">yarali_sayisi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2009</td>
+<td style="text-align: right;">72561312</td>
+<td style="text-align: right;">14316700</td>
+<td style="text-align: right;">1053346</td>
+<td style="text-align: right;">942225</td>
+<td style="text-align: right;">111121</td>
+<td style="text-align: right;">4324</td>
+<td style="text-align: right;">201380</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">73722988</td>
+<td style="text-align: right;">15095603</td>
+<td style="text-align: right;">1106201</td>
+<td style="text-align: right;">989397</td>
+<td style="text-align: right;">116804</td>
+<td style="text-align: right;">4045</td>
+<td style="text-align: right;">211496</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2011</td>
+<td style="text-align: right;">74724269</td>
+<td style="text-align: right;">16089528</td>
+<td style="text-align: right;">1228928</td>
+<td style="text-align: right;">1097083</td>
+<td style="text-align: right;">131845</td>
+<td style="text-align: right;">3835</td>
+<td style="text-align: right;">238074</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">75627384</td>
+<td style="text-align: right;">17033413</td>
+<td style="text-align: right;">1296634</td>
+<td style="text-align: right;">1143082</td>
+<td style="text-align: right;">153552</td>
+<td style="text-align: right;">3750</td>
+<td style="text-align: right;">268079</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">76667864</td>
+<td style="text-align: right;">17939447</td>
+<td style="text-align: right;">1207354</td>
+<td style="text-align: right;">1046048</td>
+<td style="text-align: right;">161306</td>
+<td style="text-align: right;">3685</td>
+<td style="text-align: right;">274829</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">77695904</td>
+<td style="text-align: right;">18828721</td>
+<td style="text-align: right;">1199010</td>
+<td style="text-align: right;">1030498</td>
+<td style="text-align: right;">168512</td>
+<td style="text-align: right;">3524</td>
+<td style="text-align: right;">285059</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">78741053</td>
+<td style="text-align: right;">19994472</td>
+<td style="text-align: right;">1313359</td>
+<td style="text-align: right;">1130348</td>
+<td style="text-align: right;">183011</td>
+<td style="text-align: right;">7530</td>
+<td style="text-align: right;">304421</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">79814871</td>
+<td style="text-align: right;">21090424</td>
+<td style="text-align: right;">1182491</td>
+<td style="text-align: right;">997363</td>
+<td style="text-align: right;">185128</td>
+<td style="text-align: right;">7300</td>
+<td style="text-align: right;">303812</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">80810525</td>
+<td style="text-align: right;">22218945</td>
+<td style="text-align: right;">1202716</td>
+<td style="text-align: right;">1020047</td>
+<td style="text-align: right;">182669</td>
+<td style="text-align: right;">7427</td>
+<td style="text-align: right;">300383</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">82003882</td>
+<td style="text-align: right;">22865921</td>
+<td style="text-align: right;">1229364</td>
+<td style="text-align: right;">1042832</td>
+<td style="text-align: right;">186532</td>
+<td style="text-align: right;">6675</td>
+<td style="text-align: right;">307071</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">83154997</td>
+<td style="text-align: right;">23156975</td>
+<td style="text-align: right;">1168144</td>
+<td style="text-align: right;">993248</td>
+<td style="text-align: right;">174896</td>
+<td style="text-align: right;">5473</td>
+<td style="text-align: right;">283234</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">83614362</td>
+<td style="text-align: right;">24144857</td>
+<td style="text-align: right;">983808</td>
+<td style="text-align: right;">833533</td>
+<td style="text-align: right;">150275</td>
+<td style="text-align: right;">4866</td>
+<td style="text-align: right;">226266</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">84680273</td>
+<td style="text-align: right;">25249119</td>
+<td style="text-align: right;">1186353</td>
+<td style="text-align: right;">998390</td>
+<td style="text-align: right;">187963</td>
+<td style="text-align: right;">5362</td>
+<td style="text-align: right;">274615</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">85279553</td>
+<td style="text-align: right;">26482847</td>
+<td style="text-align: right;">1232957</td>
+<td style="text-align: right;">1035696</td>
+<td style="text-align: right;">197261</td>
+<td style="text-align: right;">5229</td>
+<td style="text-align: right;">288696</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">85372377</td>
+<td style="text-align: right;">28740492</td>
+<td style="text-align: right;">1314136</td>
+<td style="text-align: right;">1079065</td>
+<td style="text-align: right;">235071</td>
+<td style="text-align: right;">6548</td>
+<td style="text-align: right;">350855</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">86249808</td>
+<td style="text-align: right;">31301389</td>
+<td style="text-align: right;">1444026</td>
+<td style="text-align: right;">1177172</td>
+<td style="text-align: right;">266854</td>
+<td style="text-align: right;">6351</td>
+<td style="text-align: right;">385117</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Bu ilk inceleme sonucunda veri setinin yıllara göre düzenli gözlemler içerdiği ve temel trafik göstergelerini karşılaştırmalı biçimde incelemeye uygun olduğu görülmüştür.</p>
 </section>
-<section id="trend-analizi" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</h2>
-<p>xxxxxx</p>
+<section id="türetilmiş-değişkenler" class="level3" data-number="0.8">
+<h3 data-number="0.8" class="anchored" data-anchor-id="türetilmiş-değişkenler"><span class="header-section-number">0.8</span> Türetilmiş Değişkenler</h3>
+<p>Sadece ham sayıları incelemek yeterli olmayacağı için, nüfus ve araç sayısına göre normalize edilmiş yeni göstergeler oluşturulmuştur.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>trafik <span class="ot">&lt;-</span> trafik <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">arac_1000_nufus =</span> arac_sayisi <span class="sc">/</span> nufus <span class="sc">*</span> <span class="dv">1000</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">kaza_100000_nufus =</span> kaza_sayisi <span class="sc">/</span> nufus <span class="sc">*</span> <span class="dv">100000</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">kaza_10000_arac =</span> kaza_sayisi <span class="sc">/</span> arac_sayisi <span class="sc">*</span> <span class="dv">10000</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">olu_100000_nufus =</span> olu_sayisi <span class="sc">/</span> nufus <span class="sc">*</span> <span class="dv">100000</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yarali_100000_nufus =</span> yarali_sayisi <span class="sc">/</span> nufus <span class="sc">*</span> <span class="dv">100000</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Bu göstergeler sayesinde mutlak artışların yanında göreli risk düzeyi de değerlendirilebilmektedir.</p>
 </section>
-<section id="model-uydurma" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</h2>
-<p>xxxxxx</p>
+<section id="keşifsel-veri-analizi" class="level3" data-number="0.9">
+<h3 data-number="0.9" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">0.9</span> Keşifsel Veri Analizi</h3>
+<p>Bu bölümde Türkiye nüfusunun 2009 - 2024 yılları arasındaki değişimi, Türkiye’de bu yıllarda trafiğe kayıtlı araç sayısındaki değişim ve bu yıllarda meydana gelen kaza sayısı grafiksel olarak ifade edilmiştir.</p>
 </section>
-<section id="sonuçlar" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</h2>
-<p>xxxxxx</p>
+<section id="yıllara-göre-nüfus-değişimi" class="level3" data-number="0.10">
+<h3 data-number="0.10" class="anchored" data-anchor-id="yıllara-göre-nüfus-değişimi"><span class="header-section-number">0.10</span> Yıllara Göre Nüfus Değişimi</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> nufus)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Yıllara Göre Türkiye Nüfusu"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Nüfus"</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, 2009–2024 döneminde Türkiye nüfusunun genel artış eğilimini göstermektedir.</p>
 </section>
+<section id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı" class="level3" data-number="0.11">
+<h3 data-number="0.11" class="anchored" data-anchor-id="yıllara-göre-trafiğe-kayıtlı-araç-sayısı"><span class="header-section-number">0.11</span> Yıllara Göre Trafiğe Kayıtlı Araç Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> arac_sayisi)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Yıllara Göre Trafiğe Kayıtlı Araç Sayısı"</span>,</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Araç Sayısı"</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, araç sayısının yıllar içinde nasıl değiştiğini göstermektedir.</p>
 </section>
-<section id="sonuçlar-ve-ana-çıkarımlar" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</h1>
-<p>xxxxxx</p>
+<section id="yıllara-göre-toplam-kaza-sayısı" class="level3" data-number="0.12">
+<h3 data-number="0.12" class="anchored" data-anchor-id="yıllara-göre-toplam-kaza-sayısı"><span class="header-section-number">0.12</span> Yıllara Göre Toplam Kaza Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> kaza_sayisi)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Yıllara Göre Toplam Kaza Sayısı"</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Kaza Sayısı"</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, toplam kaza sayısındaki yıllık değişimi göstermektedir.</p>
+</section>
+<section id="birlikte-değişim-analizi" class="level3" data-number="0.13">
+<h3 data-number="0.13" class="anchored" data-anchor-id="birlikte-değişim-analizi"><span class="header-section-number">0.13</span> Birlikte Değişim Analizi</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>trafik_endeks <span class="ot">&lt;-</span> trafik <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">nufus_endeks =</span> nufus <span class="sc">/</span> <span class="fu">first</span>(nufus) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">arac_endeks =</span> arac_sayisi <span class="sc">/</span> <span class="fu">first</span>(arac_sayisi) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">kaza_endeks =</span> kaza_sayisi <span class="sc">/</span> <span class="fu">first</span>(kaza_sayisi) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik_endeks, <span class="fu">aes</span>(<span class="at">x =</span> yil)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> nufus_endeks, <span class="at">color =</span> <span class="st">"Nüfus"</span>), <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> arac_endeks, <span class="at">color =</span> <span class="st">"Araç Sayısı"</span>), <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> kaza_endeks, <span class="at">color =</span> <span class="st">"Kaza Sayısı"</span>), <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik_endeks<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"2009=100 Endeksine Göre Nüfus, Araç Sayısı ve Kaza Sayısı"</span>,</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Endeks Değeri"</span>,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Değişken"</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Üç temel değişkenin yıllar içindeki değişimini daha rahat kıyaslayabilmek için, bu grafikte değişkenler 2009 yılı 100 kabul edilerek endekslenmiştir. Böylece nüfus, araç sayısı ve kaza sayısının yıllar içindeki artış hızları aynı ölçekte karşılaştırılabilmiştir.</p>
+</section>
+<section id="oran-bazlı-analizler" class="level3" data-number="0.14">
+<h3 data-number="0.14" class="anchored" data-anchor-id="oran-bazlı-analizler"><span class="header-section-number">0.14</span> Oran Bazlı Analizler</h3>
+</section>
+<section id="kişi-başına-kaza-sayısı" class="level3" data-number="0.15">
+<h3 data-number="0.15" class="anchored" data-anchor-id="kişi-başına-kaza-sayısı"><span class="header-section-number">0.15</span> 100.000 Kişi Başına Kaza Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> kaza_100000_nufus)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"100.000 Kişi Başına Kaza Sayısı"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Kaza Sayısı"</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu oran, nüfus artışından bağımsız olarak kaza yoğunluğunu görmeyi sağlar.</p>
+</section>
+<section id="araç-başına-kaza-sayısı" class="level3" data-number="0.16">
+<h3 data-number="0.16" class="anchored" data-anchor-id="araç-başına-kaza-sayısı"><span class="header-section-number">0.16</span> 10.000 Araç Başına Kaza Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> kaza_10000_arac)) <span class="sc">+</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"10.000 Araç Başına Kaza Sayısı"</span>,</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Kaza Sayısı"</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, araç sayısı artsa bile araç başına düşen kaza riskinin nasıl değiştiğini göstermektedir.</p>
+</section>
+<section id="kişi-başına-ölüm-sayısı" class="level3" data-number="0.17">
+<h3 data-number="0.17" class="anchored" data-anchor-id="kişi-başına-ölüm-sayısı"><span class="header-section-number">0.17</span> 100.000 Kişi Başına Ölüm Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> olu_100000_nufus)) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"100.000 Kişi Başına Ölüm Sayısı"</span>,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Ölüm Sayısı"</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, kaza sayısından bağımsız olarak kaza başına düşen ölüm oranını ifade etmektedir.</p>
+</section>
+<section id="kişi-başına-yaralı-sayısı" class="level3" data-number="0.18">
+<h3 data-number="0.18" class="anchored" data-anchor-id="kişi-başına-yaralı-sayısı"><span class="header-section-number">0.18</span> 100.000 Kişi Başına Yaralı Sayısı</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> yil, <span class="at">y =</span> yarali_100000_nufus)) <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> trafik<span class="sc">$</span>yil) <span class="sc">+</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"100.000 Kişi Başına Yaralı Sayısı"</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Yaralı Sayısı"</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, kaza sayısından bağımsız olarak kaza başına düşen yaralanma oranını ifade etmektedir.</p>
+</section>
+<section id="değişkenler-arasındaki-ilişki" class="level3" data-number="0.19">
+<h3 data-number="0.19" class="anchored" data-anchor-id="değişkenler-arasındaki-ilişki"><span class="header-section-number">0.19</span> Değişkenler Arasındaki İlişki</h3>
+<p>Bu bölümde nüfus, araç sayısı ve kaza sayısındaki ilişki grafiksel olarak ifade edilerek incelenmiştir.</p>
+</section>
+<section id="araç-sayısı-ile-kaza-sayısı-ilişkisi" class="level3" data-number="0.20">
+<h3 data-number="0.20" class="anchored" data-anchor-id="araç-sayısı-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.20</span> Araç Sayısı ile Kaza Sayısı İlişkisi</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> arac_sayisi, <span class="at">y =</span> kaza_sayisi)) <span class="sc">+</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Araç Sayısı ile Kaza Sayısı Arasındaki İlişki"</span>,</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Araç Sayısı"</span>,</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Kaza Sayısı"</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Bu grafik, araç sayısı ile kaza sayısı arasında genel ilişkinin yönünü göstermektedir.</p>
+</section>
+<section id="nüfus-ile-kaza-sayısı-ilişkisi" class="level3" data-number="0.21">
+<h3 data-number="0.21" class="anchored" data-anchor-id="nüfus-ile-kaza-sayısı-ilişkisi"><span class="header-section-number">0.21</span> Nüfus ile Kaza Sayısı İlişkisi</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Kodu göstermek için tıklayınız</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trafik, <span class="fu">aes</span>(<span class="at">x =</span> nufus, <span class="at">y =</span> kaza_sayisi)) <span class="sc">+</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">big.mark =</span> <span class="st">"."</span>)) <span class="sc">+</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Nüfus ile Kaza Sayısı Arasındaki İlişki"</span>,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Nüfus"</span>,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Kaza Sayısı"</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="bulgular-ve-yorum" class="level3" data-number="0.22">
+<h3 data-number="0.22" class="anchored" data-anchor-id="bulgular-ve-yorum"><span class="header-section-number">0.22</span> Bulgular ve Yorum</h3>
+<p>Elde edilen bulgular incelendiğinde, 2009–2024 döneminde Türkiye nüfusunun düzenli olarak arttığı, ancak trafiğe kayıtlı araç sayısındaki artışın daha yüksek olduğu görülmektedir. Buna rağmen trafik kazaları her yıl aynı şekilde artmamış, bazı yıllarda düşüş ve dalgalanmalar yaşanmıştır. Bu durum, trafik kazalarının yalnızca araç sayısıyla açıklanamayacağını göstermektedir.</p>
+<p>Grafikler değerlendirildiğinde, araç sayısı sürekli artmasına rağmen kaza ve ölüm oranlarının aynı hızda yükselmediği dikkat çekmektedir. Bu durumun; araç güvenlik sistemlerindeki gelişmeler, yol altyapısındaki iyileştirmeler, trafik denetimlerinin artması ve sürücü davranışlarındaki değişimlerle ilişkili olabileceği düşünülmektedir.</p>
+<p>Oran bazlı göstergeler incelendiğinde, toplam değerler artsa bile bazı dönemlerde göreli riskin sabit kaldığı veya azaldığı görülmektedir. Bu nedenle trafik güvenliğini değerlendirirken yalnızca toplam kaza sayısına değil, nüfus ve araç sayısına göre normalize edilmiş verilere de bakılması gerekmektedir.</p>
+<p>2020 yılı verileri ayrıca dikkat çekmektedir. Covid-19 pandemisi nedeniyle uygulanan kısıtlamalar sonucunda trafik yoğunluğu azalmış ve buna bağlı olarak trafik kazalarında belirgin bir düşüş görülmüştür. Bu durum, trafik yoğunluğu ile kaza sayısı arasında doğrudan bir ilişki olduğunu göstermektedir.</p>
+<p>Genel olarak değerlendirildiğinde, Türkiye’de araç sayısındaki hızlı artışa rağmen trafik güvenliği göstergelerinin aynı ölçüde kötüleşmemesi; altyapı yatırımları, denetim mekanizmaları ve güvenlik teknolojilerinin etkili olduğunu düşündürmektedir.</p>
+</section>
+<section id="sonuç" class="level3" data-number="0.23">
+<h3 data-number="0.23" class="anchored" data-anchor-id="sonuç"><span class="header-section-number">0.23</span> Sonuç</h3>
+<p>Bu projede, Türkiye’de 2009–2024 yılları arasında nüfus, trafiğe kayıtlı araç sayısı ve trafik kazaları arasındaki ilişki incelenmiştir. Analiz sonucunda araç sayısının nüfustan daha hızlı arttığı, ancak trafik kazalarının aynı hızda artmadığı görülmüştür.</p>
+<p>Elde edilen bulgular, trafik güvenliğinin yalnızca araç sayısına bağlı olmadığını; yol altyapısı, araç teknolojileri, denetimler ve sürücü davranışları gibi farklı faktörlerden de etkilendiğini göstermektedir. Özellikle oran bazlı göstergeler incelendiğinde, bazı dönemlerde toplam değerler artsa bile göreli riskin azaldığı görülmüştür. Pandemi döneminde trafik yoğunluğunun azalmasıyla birlikte kaza sayılarında da düşüş yaşanması, trafik hareketliliği ile kaza oranları arasındaki ilişkiyi desteklemektedir.</p>
+<p>Sonuç olarak, Türkiye’de artan araçlaşmaya rağmen trafik güvenliği göstergelerinin belirli ölçüde kontrol altında tutulabildiği görülmektedir. Ancak trafik kazalarının azaltılması için denetimlerin, sürücü eğitimlerinin ve altyapı çalışmalarının devam etmesi gerektiği değerlendirilmektedir.</p>
+</section>
+<section id="kullanılan-araçlar-ve-not" class="level3" data-number="0.24">
+<h3 data-number="0.24" class="anchored" data-anchor-id="kullanılan-araçlar-ve-not"><span class="header-section-number">0.24</span> Kullanılan Araçlar ve Not</h3>
+<p>Bu proje R programlama dili kullanılarak hazırlanmış, Quarto ile raporlanmış ve GitHub Pages üzerinde yayımlanmıştır.</p>
+<p>Bu çalışmada analiz sürecini desteklemek amacıyla yapay zekâ araçlarından yararlanılmıştır. Nihai değerlendirme, yorumlama ve yazım aşamaları tarafımızca gözden geçirilmiştir.</p>
+</section>
+<section id="hazırlayanlar" class="level3" data-number="0.25">
+<h3 data-number="0.25" class="anchored" data-anchor-id="hazırlayanlar"><span class="header-section-number">0.25</span> Hazırlayanlar</h3>
+<section id="erdem-aslanyilmaz" class="level4" data-number="0.25.1">
+<h4 data-number="0.25.1" class="anchored" data-anchor-id="erdem-aslanyilmaz"><span class="header-section-number">0.25.1</span> Erdem ASLANYILMAZ</h4>
+</section>
+<section id="muhammed-talha-büyük" class="level4" data-number="0.25.2">
+<h4 data-number="0.25.2" class="anchored" data-anchor-id="muhammed-talha-büyük"><span class="header-section-number">0.25.2</span> Muhammed Talha BÜYÜK</h4>
+</section>
+<section id="oğuzhan-şenel" class="level4" data-number="0.25.3">
+<h4 data-number="0.25.3" class="anchored" data-anchor-id="oğuzhan-şenel"><span class="header-section-number">0.25.3</span> Oğuzhan ŞENEL</h4>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
