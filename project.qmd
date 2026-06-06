@@ -317,15 +317,13 @@ ggplot(trafik, aes(x = nufus, y = kaza_sayisi)) +
 
 ### Bulgular ve Yorum
 
-Elde edilen bulgular incelendiğinde, 2009–2024 döneminde Türkiye nüfusunun düzenli olarak arttığı, ancak trafiğe kayıtlı araç sayısındaki artışın daha yüksek olduğu görülmektedir. Buna rağmen trafik kazaları her yıl aynı şekilde artmamış, bazı yıllarda düşüş ve dalgalanmalar yaşanmıştır. Bu durum, trafik kazalarının yalnızca araç sayısıyla açıklanamayacağını göstermektedir.
+Elde edilen bulgular değerlendirildiğinde, 2009–2024 döneminde Türkiye nüfusunun sürekli arttığı, ancak trafiğe kayıtlı araç sayısındaki artışın daha yüksek bir hızda gerçekleştiği görülmektedir. Buna karşılık kaza sayısı her yıl aynı doğrultuda artmamış, bazı yıllarda düşüşler ve dalgalanmalar gözlenmiştir.
 
-Grafikler değerlendirildiğinde, araç sayısı sürekli artmasına rağmen kaza ve ölüm oranlarının aynı hızda yükselmediği dikkat çekmektedir. Bu durumun; araç güvenlik sistemlerindeki gelişmeler, yol altyapısındaki iyileştirmeler, trafik denetimlerinin artması ve sürücü davranışlarındaki değişimlerle ilişkili olabileceği düşünülmektedir.
+Bu durum, araç sayısındaki artışın tek başına kaza sayısını açıklamak için yeterli olmadığını düşündürmektedir. Araç güvenlik teknolojilerindeki gelişmeler, yol altyapısındaki iyileşmeler, denetimlerin artması, sürücü davranışlarındaki değişimler ve olağanüstü dönemler bu farklılaşmayı açıklayabilecek unsurlar arasında yer almaktadır.
 
-Oran bazlı göstergeler incelendiğinde, toplam değerler artsa bile bazı dönemlerde göreli riskin sabit kaldığı veya azaldığı görülmektedir. Bu nedenle trafik güvenliğini değerlendirirken yalnızca toplam kaza sayısına değil, nüfus ve araç sayısına göre normalize edilmiş verilere de bakılması gerekmektedir.
+Özellikle oran bazlı göstergeler incelendiğinde, mutlak sayıların artmasına rağmen göreli riskin bazı dönemlerde sabit kaldığı ya da azaldığı görülebilir. Bu nedenle trafik güvenliğini değerlendirirken yalnızca toplam kaza sayısına değil, nüfus ve araç sayısına göre normalize edilmiş göstergelere de bakmak gerekmektedir.
 
-2020 yılı verileri ayrıca dikkat çekmektedir. Covid-19 pandemisi nedeniyle uygulanan kısıtlamalar sonucunda trafik yoğunluğu azalmış ve buna bağlı olarak trafik kazalarında belirgin bir düşüş görülmüştür. Bu durum, trafik yoğunluğu ile kaza sayısı arasında doğrudan bir ilişki olduğunu göstermektedir.
-
-Genel olarak değerlendirildiğinde, Türkiye’de araç sayısındaki hızlı artışa rağmen trafik güvenliği göstergelerinin aynı ölçüde kötüleşmemesi; altyapı yatırımları, denetim mekanizmaları ve güvenlik teknolojilerinin etkili olduğunu düşündürmektedir.
+Buna ek olarak 2020 yılında nüfus ve araç sayısının parelel düzeyde artışı devam ederken kaza sayısında dramatik bir düşüş yaşandığı fark edilmiştir. Bu durumun temel sebebi 2020 yılında Covid pandemisi nedeniyle getirilen sokağa çıkma yasaklarına bağlı olarak trafik yoğunluğunun düşmesi olarak yorumlanmıştır.
 
 ### Sonuç
 
